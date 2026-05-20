@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<title>Hito — Studio de producto</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Studio de producto. Construimos MVPs, SaaS y páginas web. Embedded con tu equipo, sprints cortos, enviamos a producción." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="hito-site.css" />
+</head>
+<body>
+
+<!-- ============================================================ Top status bar -->
+<div class="topbar" data-screen-label="Topbar">
+  <div class="topbar-inner">
+    <span class="live"><span class="dot-live"></span>Disponible · Q3 2026 — 2 plazas</span>
+    <span class="tb-mid">
+      <span>Madrid · 40.4°N 3.7°W</span>
+      <span class="sep">/</span>
+      <span>Embedded remote · CET</span>
+      <span class="sep">/</span>
+      <span id="clock">— : —</span>
+    </span>
+    <span class="tb-end">
+      <a href="mailto:hola@hito.studio">hola@hito.studio</a>
+    </span>
+  </div>
+</div>
+
+<!-- ============================================================ Nav -->
+<nav class="nav" id="nav" data-screen-label="Nav">
+  <a class="brand" href="index.html" aria-label="Hito home">
+    <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
+      <path d="M 52 12 L 90 58 L 70 58 L 52 36 L 34 58 L 14 58 Z" fill="#0E0E10" />
+      <path d="M 30 66 L 50 88 L 36 88 L 30 81 L 24 88 L 10 88 Z" fill="#0E0E10" />
+    </svg>
+    <span class="word">hito<span class="dot">.</span></span>
+  </a>
+  <div class="nav-links">
+    <a href="index.html" class="active">Trabajo</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="#equipo">Equipo</a>
+    <a href="#hablamos" class="nav-cta">Hablamos →</a>
+  </div>
+</nav>
+
+<!-- ============================================================ Hero -->
+<header class="wrap hero" data-screen-label="Hero">
+  <div class="hero-coords" aria-hidden="true">
+    <b>N° 001 / Studio</b>
+    Madrid 40.4°N · 3.7°W<br />
+    Est. MMXXVI
+  </div>
+  <span class="eyebrow">Studio · MVP · SaaS · Web</span>
+  <h1 class="h-display">Tu próximo<br />hito<span class="dot">,</span><br />en producción.</h1>
+  <p class="lede">
+    Diseñamos y construimos producto digital para founders y equipos
+    pequeños. Páginas web, MVPs y SaaS. Embedded con tu equipo,
+    sprints cortos, enviamos a producción — no a Figma.
+  </p>
+  <div class="btn-row">
+    <a href="#hablamos" class="btn btn-primary">Cuéntanos tu proyecto <span class="arrow">→</span></a>
+    <a href="servicios.html" class="btn btn-ghost">Servicios</a>
+  </div>
+
+  <!-- ===== Hero showcase / último envío ===== -->
+  <div class="hero-showcase" data-screen-label="Hero showcase">
+    <div class="hs-caption">
+      <span class="left">Último envío · Mayo 2026</span>
+      <span class="right">
+        <b>Bea Casas</b>
+        <span class="sep">/</span>
+        <span>Marketplace · Web</span>
+        <span class="sep">/</span>
+        <span>7 semanas</span>
+        <span class="sep">/</span>
+        <span>Next · Postgres</span>
+      </span>
+    </div>
+    <div class="hs-frame">
+      <span class="hs-tag t1">Caso 06 / 23</span>
+      <span class="hs-tag t2"><span class="pulse"></span>En producción</span>
+      <img src="assets/bea-casas-mockup.png" alt="Bea Casas — landing en MacBook Pro" />
+      <a href="#trabajo" class="hs-tag t3"><span class="arr">↳</span>Ver caso completo</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ Marquee -->
+<div class="marquee" aria-hidden="true" data-screen-label="Marquee">
+  <div class="marquee-track">
+    <span class="marquee-item">Diseño de producto</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item alt">MVPs en 6 semanas</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item">SaaS scaffolding</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item alt">Páginas que convierten</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item">Diseño de producto</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item alt">MVPs en 6 semanas</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item">SaaS scaffolding</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+    <span class="marquee-item alt">Páginas que convierten</span>
+    <svg class="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+  </div>
+</div>
+
+<!-- ============================================================ Portfolio -->
+<section class="section" id="trabajo" data-screen-label="Trabajo">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Selected work · 2024 – 2026</span>
+        <h2>Cosas que<br />hemos enviado.</h2>
+      </div>
+      <p class="desc">
+        Una selección de proyectos recientes. Páginas, MVPs y producto
+        SaaS para founders, fondos y equipos chicos. Si quieres
+        referencias detalladas, te las enseñamos en una llamada.
+      </p>
+    </div>
+
+    <!-- ============ Featured project ============ -->
+    <div class="work-featured">
+      <article class="work-card" data-screen-label="Work · Luma OS">
+        <span class="work-idx">F · 01 — Featured</span>
+        <span class="work-go" aria-hidden="true">↗</span>
+        <div class="work-thumb">
+          <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="500" fill="#0E0E10" />
+            <!-- nav -->
+            <rect x="36" y="28" width="22" height="22" rx="4" fill="#1E50C9" />
+            <rect x="68" y="34" width="56" height="10" rx="3" fill="#F4F1E9" opacity="0.9" />
+            <rect x="640" y="32" width="50" height="14" rx="7" fill="#F4F1E9" opacity="0.18" />
+            <rect x="700" y="32" width="64" height="14" rx="7" fill="#1E50C9" />
+            <!-- big number -->
+            <text x="36" y="160" font-family="Archivo, sans-serif" font-weight="900" font-size="96" letter-spacing="-5" fill="#F4F1E9">$ 24.7M</text>
+            <text x="36" y="200" font-family="JetBrains Mono, monospace" font-size="14" fill="#F4F1E9" opacity="0.55" letter-spacing="2">AUM · Q2 2025 · +18.4%</text>
+            <!-- chart -->
+            <polyline points="36,360 100,320 160,340 220,290 280,300 340,250 400,260 460,210 520,230 580,180 640,200 700,140 760,160" fill="none" stroke="#1E50C9" stroke-width="3" />
+            <line x1="36" y1="420" x2="764" y2="420" stroke="#F4F1E9" opacity="0.1" />
+            <!-- cards -->
+            <rect x="36" y="440" width="220" height="44" rx="6" fill="#F4F1E9" opacity="0.08" />
+            <rect x="272" y="440" width="220" height="44" rx="6" fill="#F4F1E9" opacity="0.08" />
+            <rect x="508" y="440" width="256" height="44" rx="6" fill="#F4F1E9" opacity="0.08" />
+          </svg>
+        </div>
+        <div class="work-meta">
+          <div>
+            <h3 class="work-title">Luma OS — Portfolio dashboard</h3>
+            <div class="work-sub">Luma Capital · 2025 · SaaS · 8 semanas</div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Producto</span>
+            <span class="tag">Next.js</span>
+            <span class="tag">Fintech</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- ============ Grid 2x2 ============ -->
+    <div class="work-grid">
+
+      <article class="work-card" data-screen-label="Work · Bardo">
+        <span class="work-idx">02</span>
+        <span class="work-go" aria-hidden="true">↗</span>
+        <div class="work-thumb">
+          <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="600" fill="#F4F1E9" />
+            <!-- nav -->
+            <rect x="40" y="36" width="18" height="18" rx="3" fill="#0E0E10" />
+            <rect x="68" y="40" width="48" height="10" rx="3" fill="#0E0E10" />
+            <rect x="640" y="34" width="64" height="22" rx="11" fill="#0E0E10" />
+            <!-- hero text -->
+            <text x="40" y="220" font-family="Archivo, sans-serif" font-weight="900" font-size="84" letter-spacing="-4" fill="#0E0E10">Bardo</text>
+            <text x="40" y="290" font-family="Archivo, sans-serif" font-weight="900" font-size="56" letter-spacing="-3" fill="#0E0E10">canta lo que</text>
+            <text x="40" y="350" font-family="Archivo, sans-serif" font-weight="900" font-size="56" letter-spacing="-3" fill="#C2402A">no se dice.</text>
+            <!-- product cards -->
+            <rect x="40" y="420" width="220" height="140" rx="8" fill="#EAE5D6" />
+            <rect x="280" y="420" width="220" height="140" rx="8" fill="#EAE5D6" />
+            <rect x="520" y="420" width="220" height="140" rx="8" fill="#0E0E10" />
+            <rect x="540" y="438" width="40" height="40" rx="20" fill="#C2402A" />
+          </svg>
+        </div>
+        <div class="work-meta">
+          <div>
+            <h3 class="work-title">Bardo — Editorial poético</h3>
+            <div class="work-sub">Bardo Books · 2025 · Web · 4 semanas</div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Web</span>
+            <span class="tag">Brand</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-screen-label="Work · Cantera">
+        <span class="work-idx">03</span>
+        <span class="work-go" aria-hidden="true">↗</span>
+        <div class="work-thumb">
+          <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="600" fill="#EAE5D6" />
+            <!-- top bar -->
+            <rect x="40" y="36" width="14" height="14" rx="2" fill="#0E0E10" />
+            <rect x="64" y="38" width="48" height="10" rx="3" fill="#0E0E10" />
+            <rect x="600" y="32" width="160" height="22" rx="6" fill="#0E0E10" opacity="0.08" />
+            <!-- sidebar -->
+            <rect x="40" y="80" width="160" height="500" rx="8" fill="#F4F1E9" />
+            <rect x="56" y="100" width="120" height="10" rx="3" fill="#0E0E10" opacity="0.4" />
+            <rect x="56" y="124" width="100" height="10" rx="3" fill="#0E0E10" opacity="0.4" />
+            <rect x="56" y="148" width="130" height="10" rx="3" fill="#1E50C9" />
+            <rect x="56" y="172" width="90" height="10" rx="3" fill="#0E0E10" opacity="0.4" />
+            <!-- candidate cards -->
+            <rect x="220" y="80" width="540" height="80" rx="8" fill="#F4F1E9" />
+            <circle cx="260" cy="120" r="22" fill="#1E50C9" />
+            <rect x="296" y="106" width="140" height="12" rx="3" fill="#0E0E10" />
+            <rect x="296" y="128" width="200" height="8" rx="3" fill="#0E0E10" opacity="0.4" />
+            <rect x="220" y="180" width="540" height="80" rx="8" fill="#F4F1E9" />
+            <circle cx="260" cy="220" r="22" fill="#C2402A" />
+            <rect x="296" y="206" width="140" height="12" rx="3" fill="#0E0E10" />
+            <rect x="296" y="228" width="200" height="8" rx="3" fill="#0E0E10" opacity="0.4" />
+            <rect x="220" y="280" width="540" height="80" rx="8" fill="#F4F1E9" />
+            <circle cx="260" cy="320" r="22" fill="#0E0E10" />
+            <rect x="296" y="306" width="140" height="12" rx="3" fill="#0E0E10" />
+            <rect x="296" y="328" width="200" height="8" rx="3" fill="#0E0E10" opacity="0.4" />
+          </svg>
+        </div>
+        <div class="work-meta">
+          <div>
+            <h3 class="work-title">Cantera — ATS para talento técnico</h3>
+            <div class="work-sub">Cantera HR · 2024 · MVP · 6 semanas</div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">MVP</span>
+            <span class="tag">HR Tech</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-screen-label="Work · Forja Studio">
+        <span class="work-idx">04</span>
+        <span class="work-go" aria-hidden="true">↗</span>
+        <div class="work-thumb">
+          <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="600" fill="#0E0E10" />
+            <!-- nav -->
+            <rect x="40" y="34" width="20" height="20" rx="4" fill="#C2402A" />
+            <rect x="70" y="40" width="80" height="10" rx="3" fill="#F4F1E9" opacity="0.9" />
+            <rect x="640" y="32" width="64" height="22" rx="11" fill="#F4F1E9" />
+            <!-- hero -->
+            <text x="40" y="180" font-family="JetBrains Mono, monospace" font-size="12" letter-spacing="3" fill="#F4F1E9" opacity="0.5">↳ AGENCIA DE PRODUCTO</text>
+            <text x="40" y="280" font-family="Archivo, sans-serif" font-weight="900" font-size="80" letter-spacing="-4" fill="#F4F1E9">Forja</text>
+            <text x="40" y="360" font-family="Archivo, sans-serif" font-weight="900" font-size="62" letter-spacing="-3" fill="#F4F1E9">producto<tspan fill="#C2402A">.</tspan></text>
+            <!-- circles -->
+            <circle cx="600" cy="320" r="120" fill="#C2402A" opacity="0.9" />
+            <circle cx="680" cy="380" r="50" fill="#F4F1E9" />
+            <!-- footer chips -->
+            <rect x="40" y="500" width="100" height="32" rx="16" fill="#F4F1E9" opacity="0.12" />
+            <rect x="152" y="500" width="120" height="32" rx="16" fill="#F4F1E9" opacity="0.12" />
+            <rect x="284" y="500" width="80" height="32" rx="16" fill="#F4F1E9" opacity="0.12" />
+          </svg>
+        </div>
+        <div class="work-meta">
+          <div>
+            <h3 class="work-title">Forja — Web del studio</h3>
+            <div class="work-sub">Forja Studio · 2024 · Web · 3 semanas</div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Web</span>
+            <span class="tag">Brand</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="work-card" data-screen-label="Work · Veta">
+        <span class="work-idx">05</span>
+        <span class="work-go" aria-hidden="true">↗</span>
+        <div class="work-thumb">
+          <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+            <rect width="800" height="600" fill="#F4F1E9" />
+            <!-- nav -->
+            <rect x="40" y="36" width="16" height="16" rx="3" fill="#1E50C9" />
+            <rect x="68" y="40" width="46" height="10" rx="3" fill="#0E0E10" />
+            <rect x="660" y="32" width="100" height="22" rx="11" fill="#0E0E10" />
+            <!-- hero -->
+            <text x="40" y="160" font-family="JetBrains Mono, monospace" font-size="11" letter-spacing="3" fill="#1E50C9">↳ DISCOVERY · BUILD</text>
+            <text x="40" y="260" font-family="Archivo, sans-serif" font-weight="900" font-size="88" letter-spacing="-4" fill="#0E0E10">Encontrar</text>
+            <text x="40" y="330" font-family="Archivo, sans-serif" font-weight="900" font-size="88" letter-spacing="-4" fill="#0E0E10">la veta<tspan fill="#1E50C9">.</tspan></text>
+            <!-- pricing rows -->
+            <line x1="40" y1="400" x2="760" y2="400" stroke="#0E0E10" opacity="0.1" />
+            <rect x="40" y="420" width="140" height="14" rx="3" fill="#0E0E10" />
+            <rect x="660" y="420" width="100" height="14" rx="3" fill="#0E0E10" />
+            <line x1="40" y1="460" x2="760" y2="460" stroke="#0E0E10" opacity="0.1" />
+            <rect x="40" y="480" width="180" height="14" rx="3" fill="#0E0E10" />
+            <rect x="660" y="480" width="100" height="14" rx="3" fill="#0E0E10" />
+            <line x1="40" y1="520" x2="760" y2="520" stroke="#0E0E10" opacity="0.1" />
+            <rect x="40" y="540" width="160" height="14" rx="3" fill="#0E0E10" />
+            <rect x="660" y="540" width="100" height="14" rx="3" fill="#0E0E10" />
+          </svg>
+        </div>
+        <div class="work-meta">
+          <div>
+            <h3 class="work-title">Veta — Web consultora</h3>
+            <div class="work-sub">Veta Consulting · 2024 · Web · 2 semanas</div>
+          </div>
+          <div class="work-tags">
+            <span class="tag">Web</span>
+            <span class="tag">Consultoría</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <!-- ============ Clients list ============ -->
+    <div class="clients">
+      <div class="clients-head">Y también hemos trabajado con</div>
+      <div class="clients-list">
+        <span>Indi</span><span class="sep">·</span>
+        <span>Estela</span><span class="sep">·</span>
+        <span>Vela Studio</span><span class="sep">·</span>
+        <span>Norte Capital</span><span class="sep">·</span>
+        <span>Hilo Labs</span><span class="sep">·</span>
+        <span>Mira</span><span class="sep">·</span>
+        <span>Onda</span><span class="sep">·</span>
+        <span>Trazo</span><span class="sep">·</span>
+        <span>Foco</span><span class="sep">·</span>
+        <span>Cima</span>
+      </div>
+    </div>
+
+    <!-- ============ Pull quote ============ -->
+    <div class="pullquote" data-screen-label="Pull quote">
+      <div class="pq-label">Kind words<br />№ 07 / 23</div>
+      <blockquote>
+        <span class="mark">“</span>Mandamos un email un martes con tres bullets.
+        El viernes ya estábamos en un sprint con Pablo y Sara. En la
+        semana 5 teníamos producto en manos de usuarios, no un
+        prototipo bonito.<span class="mark">”</span>
+      </blockquote>
+      <div class="pq-author">
+        <b>Marta Iribarren</b>
+        <span>CEO · Luma Capital</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Equipo (mini) -->
+<section class="section" id="equipo" data-screen-label="Equipo">
+  <div class="wrap">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Equipo · ahora mismo 3 + 1</span>
+        <h2>Senior.<br />Sin agencias<br />intermedias.</h2>
+      </div>
+      <p class="desc">
+        Somos un equipo pequeño y deliberado. Cuando te asignan a alguien,
+        es alguien con 8+ años de experiencia construyendo producto. No
+        hay capas de PMs, ni cuentas, ni handoff a juniors.
+      </p>
+    </div>
+
+    <!-- ============ Principios ============ -->
+    <div class="principios" data-screen-label="Principios">
+      <div class="principio">
+        <div class="pnum">Principio · 01</div>
+        <h4>Enviar &gt; pulir.</h4>
+        <p>Mejor algo en manos de usuarios el viernes que un Figma perfecto en tres semanas. Iteramos sobre lo real.</p>
+      </div>
+      <div class="principio">
+        <div class="pnum">Principio · 02</div>
+        <h4>Embedded, no agencia.</h4>
+        <p>Slack, standups, repo. Trabajamos como un miembro más de tu equipo durante el sprint. Sin black boxes.</p>
+      </div>
+      <div class="principio">
+        <div class="pnum">Principio · 03</div>
+        <h4>Scope chico, ambición grande.</h4>
+        <p>Sprints de 4 a 8 semanas. Si no cabe, lo partimos en dos. La cadencia importa más que el plan.</p>
+      </div>
+      <div class="principio">
+        <div class="pnum">Principio · 04</div>
+        <h4>Código que heredas.</h4>
+        <p>Stack estándar (Next, Postgres, Tailwind). Si mañana contratas un equipo interno, no tienen que reescribirlo.</p>
+      </div>
+    </div>
+
+    <!-- ============ Numbers ============ -->
+    <div class="numbers" data-screen-label="Numbers">
+      <div class="nbox">
+        <div class="nval">23<span class="unit">proyectos</span></div>
+        <div class="nlabel">Enviados 2024 – 2026</div>
+      </div>
+      <div class="nbox">
+        <div class="nval">6<span class="unit">sem · media</span></div>
+        <div class="nlabel">Discovery a producción</div>
+      </div>
+      <div class="nbox">
+        <div class="nval">€11M<span class="unit">raised</span></div>
+        <div class="nlabel">Por founders que acompañamos</div>
+      </div>
+      <div class="nbox">
+        <div class="nval">94<span class="unit">/ 100</span></div>
+        <div class="nlabel">NPS — últimos 12 meses</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ CTA -->
+<section class="cta" id="hablamos" data-screen-label="CTA">
+  <div class="wrap">
+    <span class="eyebrow">Una llamada · 30 minutos · sin compromiso</span>
+    <h2 class="h-display">¿Lo<br />construimos<span class="dot">?</span></h2>
+    <p class="lede">
+      Cuéntanos qué tienes entre manos. Si encaja, te mandamos
+      una propuesta concreta en 5 días.
+    </p>
+    <div class="btn-row">
+      <a href="mailto:hola@hito.studio" class="btn btn-primary">hola@hito.studio <span class="arrow">→</span></a>
+      <a href="servicios.html" class="btn btn-ghost">Cómo trabajamos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ Footer -->
+<footer class="footer" data-screen-label="Footer">
+  <div class="footer-grid">
+    <div class="footer-col">
+      <span class="word" style="font-weight:900;font-size:32px;letter-spacing:-0.055em;">hito<span style="color:var(--cobalt)">.</span></span>
+      <p class="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
+      <span class="status"><span class="dot-live"></span>Disponible Q3 2026</span>
+    </div>
+    <div class="footer-col">
+      <h6>Studio</h6>
+      <ul>
+        <li><a href="index.html">Trabajo</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="#equipo">Equipo</a></li>
+        <li><a href="#hablamos">Hablamos</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>Contacto</h6>
+      <ul>
+        <li><a href="mailto:hola@hito.studio">hola@hito.studio</a></li>
+        <li><a href="#">Calendar · 30 min</a></li>
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">Read.cv</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h6>Dónde</h6>
+      <ul>
+        <li>C / del Pez 12, 3°</li>
+        <li>28004 — Madrid</li>
+        <li>40.4° N · 3.7° W</li>
+        <li>Embedded · CET</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© MMXXVI — Hito Studio S.L.</span>
+    <span>B-77 419 220</span>
+    <span>Hecho con cariño · Madrid</span>
+  </div>
+  <div class="bigmark" aria-hidden="true">hito<span class="dot">.</span></div>
+</footer>
+
+<script>
+  // small sticky-nav border toggle
+  const nav = document.getElementById('nav');
+  document.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 12);
+  }, { passive: true });
+
+  // Live Madrid clock in the topbar
+  (function tick() {
+    const el = document.getElementById('clock');
+    if (!el) return;
+    const now = new Date();
+    const fmt = new Intl.DateTimeFormat('es-ES', {
+      hour: '2-digit', minute: '2-digit', hour12: false, timeZone: 'Europe/Madrid'
+    });
+    el.textContent = fmt.format(now) + ' CET';
+    setTimeout(tick, 30000);
+  })();
+</script>
+
+</body>
+</html>

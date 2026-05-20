@@ -1,11 +1,31 @@
 import NavScrollEffect from "./components/NavScrollEffect";
+import MadridClock from "./components/MadridClock";
 
 export default function Home() {
   return (
     <>
-      <NavScrollEffect />
+      {/* Topbar */}
+      <div className="topbar" data-screen-label="Topbar">
+        <div className="topbar-inner">
+          <span className="live">
+            <span className="dot-live" />
+            Disponible · Q3 2026 — 2 plazas
+          </span>
+          <span className="tb-mid">
+            <span>Madrid · 40.4°N 3.7°W</span>
+            <span className="sep">/</span>
+            <span>Embedded remote · CET</span>
+            <span className="sep">/</span>
+            <MadridClock />
+          </span>
+          <span className="tb-end">
+            <a href="mailto:hola@hito.studio">hola@hito.studio</a>
+          </span>
+        </div>
+      </div>
 
       {/* Nav */}
+      <NavScrollEffect />
       <nav className="nav" id="nav" data-screen-label="Nav">
         <a className="brand" href="/" aria-label="Hito home">
           <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
@@ -24,6 +44,11 @@ export default function Home() {
 
       {/* Hero */}
       <header className="wrap hero" data-screen-label="Hero">
+        <div className="hero-coords" aria-hidden="true">
+          <b>N° 001 / Studio</b>
+          Madrid 40.4°N · 3.7°W<br />
+          Est. MMXXVI
+        </div>
         <span className="eyebrow">Studio · MVP · SaaS · Web</span>
         <h1 className="h-display">
           Tu próximo<br />hito<span className="dot">,</span><br />en producción.
@@ -39,7 +64,59 @@ export default function Home() {
           </a>
           <a href="/servicios" className="btn btn-ghost">Servicios</a>
         </div>
+
+        {/* Hero showcase */}
+        <div className="hero-showcase" data-screen-label="Hero showcase">
+          <div className="hs-caption">
+            <span className="left">Último envío · Mayo 2026</span>
+            <span className="right">
+              <b>Bea Casas</b>
+              <span className="sep">/</span>
+              <span>Marketplace · Web</span>
+              <span className="sep">/</span>
+              <span>7 semanas</span>
+              <span className="sep">/</span>
+              <span>Next · Postgres</span>
+            </span>
+          </div>
+          <div className="hs-frame">
+            <span className="hs-tag t1">Caso 06 / 23</span>
+            <span className="hs-tag t2">
+              <span className="pulse" />
+              En producción
+            </span>
+            <img
+              src="/hito/assets/bea-casas-mockup.png"
+              alt="Bea Casas — landing en MacBook Pro"
+            />
+            <a href="#trabajo" className="hs-tag t3">
+              <span className="arr">↳</span>Ver caso completo
+            </a>
+          </div>
+        </div>
       </header>
+
+      {/* Marquee */}
+      <div className="marquee" aria-hidden="true" data-screen-label="Marquee">
+        <div className="marquee-track">
+          <span className="marquee-item">Diseño de producto</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item alt">MVPs en 6 semanas</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item">SaaS scaffolding</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item alt">Páginas que convierten</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item">Diseño de producto</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item alt">MVPs en 6 semanas</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item">SaaS scaffolding</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+          <span className="marquee-item alt">Páginas que convierten</span>
+          <svg className="marquee-star" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1 L14 9 L22 10 L15.5 14.5 L18 22 L12 17 L6 22 L8.5 14.5 L2 10 L10 9 Z"/></svg>
+        </div>
+      </div>
 
       {/* Portfolio */}
       <section className="section" id="trabajo" data-screen-label="Trabajo">
@@ -59,6 +136,8 @@ export default function Home() {
           {/* Featured project */}
           <div className="work-featured">
             <article className="work-card" data-screen-label="Work · Luma OS">
+              <span className="work-idx">F · 01 — Featured</span>
+              <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
                 <svg viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                   <rect width="800" height="500" fill="#0E0E10" />
@@ -93,6 +172,8 @@ export default function Home() {
           <div className="work-grid">
 
             <article className="work-card" data-screen-label="Work · Bardo">
+              <span className="work-idx">02</span>
+              <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
                 <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                   <rect width="800" height="600" fill="#F4F1E9" />
@@ -121,6 +202,8 @@ export default function Home() {
             </article>
 
             <article className="work-card" data-screen-label="Work · Cantera">
+              <span className="work-idx">03</span>
+              <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
                 <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                   <rect width="800" height="600" fill="#EAE5D6" />
@@ -159,6 +242,8 @@ export default function Home() {
             </article>
 
             <article className="work-card" data-screen-label="Work · Forja Studio">
+              <span className="work-idx">04</span>
+              <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
                 <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                   <rect width="800" height="600" fill="#0E0E10" />
@@ -188,6 +273,8 @@ export default function Home() {
             </article>
 
             <article className="work-card" data-screen-label="Work · Veta">
+              <span className="work-idx">05</span>
+              <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
                 <svg viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
                   <rect width="800" height="600" fill="#F4F1E9" />
@@ -238,6 +325,23 @@ export default function Home() {
               <span>Cima</span>
             </div>
           </div>
+
+          {/* Pull quote */}
+          <div className="pullquote" data-screen-label="Pull quote">
+            <div className="pq-label">
+              Kind words<br />№ 07 / 23
+            </div>
+            <blockquote>
+              <span className="mark">"</span>Mandamos un email un martes con tres bullets.
+              El viernes ya estábamos en un sprint con Pablo y Sara. En la
+              semana 5 teníamos producto en manos de usuarios, no un
+              prototipo bonito.<span className="mark">"</span>
+            </blockquote>
+            <div className="pq-author">
+              <b>Marta Iribarren</b>
+              <span>CEO · Luma Capital</span>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -254,6 +358,50 @@ export default function Home() {
               es alguien con 8+ años de experiencia construyendo producto. No
               hay capas de PMs, ni cuentas, ni handoff a juniors.
             </p>
+          </div>
+
+          {/* Principios */}
+          <div className="principios" data-screen-label="Principios">
+            <div className="principio">
+              <div className="pnum">Principio · 01</div>
+              <h4>Enviar &gt; pulir.</h4>
+              <p>Mejor algo en manos de usuarios el viernes que un Figma perfecto en tres semanas. Iteramos sobre lo real.</p>
+            </div>
+            <div className="principio">
+              <div className="pnum">Principio · 02</div>
+              <h4>Embedded, no agencia.</h4>
+              <p>Slack, standups, repo. Trabajamos como un miembro más de tu equipo durante el sprint. Sin black boxes.</p>
+            </div>
+            <div className="principio">
+              <div className="pnum">Principio · 03</div>
+              <h4>Scope chico, ambición grande.</h4>
+              <p>Sprints de 4 a 8 semanas. Si no cabe, lo partimos en dos. La cadencia importa más que el plan.</p>
+            </div>
+            <div className="principio">
+              <div className="pnum">Principio · 04</div>
+              <h4>Código que heredas.</h4>
+              <p>Stack estándar (Next, Postgres, Tailwind). Si mañana contratas un equipo interno, no tienen que reescribirlo.</p>
+            </div>
+          </div>
+
+          {/* Numbers */}
+          <div className="numbers" data-screen-label="Numbers">
+            <div className="nbox">
+              <div className="nval">23<span className="unit">proyectos</span></div>
+              <div className="nlabel">Enviados 2024 – 2026</div>
+            </div>
+            <div className="nbox">
+              <div className="nval">6<span className="unit">sem · media</span></div>
+              <div className="nlabel">Discovery a producción</div>
+            </div>
+            <div className="nbox">
+              <div className="nval">€11M<span className="unit">raised</span></div>
+              <div className="nlabel">Por founders que acompañamos</div>
+            </div>
+            <div className="nbox">
+              <div className="nval">94<span className="unit">/ 100</span></div>
+              <div className="nlabel">NPS — últimos 12 meses</div>
+            </div>
           </div>
         </div>
       </section>
@@ -280,11 +428,51 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="footer" data-screen-label="Footer">
-        <div className="footer-inner">
-          <span className="word">hito.studio</span>
-          <span>Madrid · est. 2026</span>
-          <span>© Hito Studio S.L.</span>
+        <div className="footer-grid">
+          <div className="footer-col">
+            <span className="word" style={{ fontWeight: 900, fontSize: 32, letterSpacing: "-0.055em" }}>
+              hito<span style={{ color: "var(--cobalt)" }}>.</span>
+            </span>
+            <p className="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
+            <span className="status">
+              <span className="dot-live" />
+              Disponible Q3 2026
+            </span>
+          </div>
+          <div className="footer-col">
+            <h6>Studio</h6>
+            <ul>
+              <li><a href="/">Trabajo</a></li>
+              <li><a href="/servicios">Servicios</a></li>
+              <li><a href="#equipo">Equipo</a></li>
+              <li><a href="#hablamos">Hablamos</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h6>Contacto</h6>
+            <ul>
+              <li><a href="mailto:hola@hito.studio">hola@hito.studio</a></li>
+              <li><a href="#">Calendar · 30 min</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="#">Read.cv</a></li>
+            </ul>
+          </div>
+          <div className="footer-col">
+            <h6>Dónde</h6>
+            <ul>
+              <li>C / del Pez 12, 3°</li>
+              <li>28004 — Madrid</li>
+              <li>40.4° N · 3.7° W</li>
+              <li>Embedded · CET</li>
+            </ul>
+          </div>
         </div>
+        <div className="footer-bottom">
+          <span>© MMXXVI — Hito Studio S.L.</span>
+          <span>B-77 419 220</span>
+          <span>Hecho con cariño · Madrid</span>
+        </div>
+        <div className="bigmark" aria-hidden="true">hito<span className="dot">.</span></div>
       </footer>
     </>
   );
