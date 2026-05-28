@@ -9,17 +9,15 @@ export default function Home() {
         <div className="topbar-inner">
           <span className="live">
             <span className="dot-live" />
-            Disponible · Q3 2026 — 2 plazas
+            Disponible desde ahora mismo.
           </span>
           <span className="tb-mid">
             <span>Madrid · 40.4°N 3.7°W</span>
             <span className="sep">/</span>
-            <span>Embedded remote · CET</span>
-            <span className="sep">/</span>
             <MadridClock />
           </span>
           <span className="tb-end">
-            <a href="mailto:hola@hito.studio">hola@hito.studio</a>
+            <a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a>
           </span>
         </div>
       </div>
@@ -309,7 +307,7 @@ export default function Home() {
 
           </div>
 
-          {/* Clients list */}
+          {/* Clients list
           <div className="clients">
             <div className="clients-head">Y también hemos trabajado con</div>
             <div className="clients-list">
@@ -324,7 +322,7 @@ export default function Home() {
               <span>Foco</span><span className="sep">·</span>
               <span>Cima</span>
             </div>
-          </div>
+          </div> */}
 
           {/* Pull quote */}
           <div className="pullquote" data-screen-label="Pull quote">
@@ -351,12 +349,11 @@ export default function Home() {
           <div className="section-head">
             <div>
               <span className="eyebrow">Equipo · ahora mismo 3 + 1</span>
-              <h2>Senior.<br />Sin agencias<br />intermedias.</h2>
+              <h2><br />Sin agencias<br />intermedias.</h2>
             </div>
             <p className="desc">
-              Somos un equipo pequeño y deliberado. Cuando te asignan a alguien,
-              es alguien con 8+ años de experiencia construyendo producto. No
-              hay capas de PMs, ni cuentas, ni handoff a juniors.
+              Somos un equipo pequeño y deliberado. No
+              hay capas de PMs, ni cuentas.
             </p>
           </div>
 
@@ -384,7 +381,7 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Numbers */}
+          {/* Numbers
           <div className="numbers" data-screen-label="Numbers">
             <div className="nbox">
               <div className="nval">23<span className="unit">proyectos</span></div>
@@ -402,7 +399,7 @@ export default function Home() {
               <div className="nval">94<span className="unit">/ 100</span></div>
               <div className="nlabel">NPS — últimos 12 meses</div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
 
@@ -418,8 +415,8 @@ export default function Home() {
             una propuesta concreta en 5 días.
           </p>
           <div className="btn-row">
-            <a href="mailto:hola@hito.studio" className="btn btn-primary">
-              hola@hito.studio <span className="arrow">→</span>
+            <a href="mailto:jeangomezgiraldo@gmail.com" className="btn btn-primary">
+              jeangomezgiraldo@gmail.com <span className="arrow">→</span>
             </a>
             <a href="/servicios" className="btn btn-ghost">Cómo trabajamos</a>
           </div>
@@ -434,10 +431,7 @@ export default function Home() {
               hito<span style={{ color: "var(--cobalt)" }}>.</span>
             </span>
             <p className="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
-            <span className="status">
-              <span className="dot-live" />
-              Disponible Q3 2026
-            </span>
+
           </div>
           <div className="footer-col">
             <h6>Studio</h6>
@@ -451,7 +445,7 @@ export default function Home() {
           <div className="footer-col">
             <h6>Contacto</h6>
             <ul>
-              <li><a href="mailto:hola@hito.studio">hola@hito.studio</a></li>
+              <li><a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a></li>
               <li><a href="#">Calendar · 30 min</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Read.cv</a></li>

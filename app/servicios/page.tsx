@@ -21,17 +21,15 @@ export default function Servicios() {
         <div className="topbar-inner">
           <span className="live">
             <span className="dot-live" />
-            Disponible · Q3 2026 — 2 plazas
+            Disponible desde ahora mismo.
           </span>
           <span className="tb-mid">
             <span>Madrid · 40.4°N 3.7°W</span>
             <span className="sep">/</span>
-            <span>Embedded remote · CET</span>
-            <span className="sep">/</span>
             <MadridClock />
           </span>
           <span className="tb-end">
-            <a href="mailto:hola@hito.studio">hola@hito.studio</a>
+            <a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a>
           </span>
         </div>
       </div>
@@ -69,8 +67,8 @@ export default function Servicios() {
           y precio cerrados desde el día uno.
         </p>
         <div className="hero-index" aria-hidden="true">
-          <b>5</b>
-          <span>servicios · desde 3.500 €</span>
+          <b>4</b>
+          <span>servicios · desde 650€</span>
         </div>
       </header>
 
@@ -105,31 +103,8 @@ export default function Servicios() {
         <div className="wrap">
           <div className="services-list">
 
-            <article className="svc" data-screen-label="Svc · Discovery">
-              <div className="svc-num">01</div>
-              <div className="svc-body">
-                <h3>Discovery Sprint</h3>
-                <p>
-                  Una semana intensiva para validar idea, audiencia y
-                  scope antes de escribir una línea de código. Salimos
-                  con prototipo navegable, mapa de features y propuesta
-                  de build.
-                </p>
-              </div>
-              <div className="svc-tags">
-                <span>· Investigación</span>
-                <span>· Prototipo</span>
-                <span>· Roadmap</span>
-                <span>· 5 días</span>
-              </div>
-              <div className="svc-price">
-                <span className="from">Desde</span>
-                <span className="amount">3.500 €</span>
-              </div>
-            </article>
-
             <article className="svc" data-screen-label="Svc · Web">
-              <div className="svc-num">02</div>
+              <div className="svc-num">01</div>
               <div className="svc-body">
                 <h3>Web a medida</h3>
                 <p>
@@ -142,18 +117,18 @@ export default function Servicios() {
                 <span>· Diseño</span>
                 <span>· Frontend</span>
                 <span>· CMS</span>
-                <span>· 3-5 semanas</span>
+                <span>· 1 semana</span>
               </div>
               <div className="svc-price">
                 <span className="from">Desde</span>
-                <span className="amount">8.000 €</span>
+                <span className="amount">650 €</span>
               </div>
             </article>
 
             <article className="svc" data-screen-label="Svc · MVP">
-              <div className="svc-num">03</div>
+              <div className="svc-num">02</div>
               <div className="svc-body">
-                <h3>MVP en 8 semanas</h3>
+                <h3>MVP</h3>
                 <p>
                   De idea validada a producto vivo en producción. Sprints
                   cerrados de 2 semanas, demos cada viernes. Lanzas con
@@ -164,16 +139,16 @@ export default function Servicios() {
                 <span>· Discovery</span>
                 <span>· Build</span>
                 <span>· Launch</span>
-                <span>· 8 semanas</span>
+                <span>· 2 - 3 semanas</span>
               </div>
               <div className="svc-price">
                 <span className="from">Desde</span>
-                <span className="amount">25.000 €</span>
+                <span className="amount">900 €</span>
               </div>
             </article>
 
             <article className="svc" data-screen-label="Svc · SaaS">
-              <div className="svc-num">04</div>
+              <div className="svc-num">03</div>
               <div className="svc-body">
                 <h3>SaaS completo</h3>
                 <p>
@@ -185,32 +160,34 @@ export default function Servicios() {
               <div className="svc-tags">
                 <span>· Producto end-to-end</span>
                 <span>· Billing · Auth</span>
-                <span>· 12-16 semanas</span>
+                <span>· 3 - 4 semanas</span>
               </div>
               <div className="svc-price">
                 <span className="from">Desde</span>
-                <span className="amount">50.000 €</span>
+                <span className="amount">1.300 €</span>
               </div>
             </article>
 
-            <article className="svc" data-screen-label="Svc · Embedded">
-              <div className="svc-num">05</div>
+            <article className="svc" data-screen-label="Svc · Marketing">
+              <div className="svc-num">04</div>
               <div className="svc-body">
-                <h3>Embedded engineering</h3>
+                <h3>Marketing digital completo</h3>
                 <p>
-                  Nos sumamos a tu equipo durante 3-6 meses como un
-                  engineer/designer senior más. Daily, retros, code
-                  review. Cero handoff, cero re-alineamiento.
+                  Identidad corporativa, presencia digital y estrategia
+                  de redes desde cero. Diseñamos la marca, construimos
+                  la plataforma y activamos los canales — todo coordinado,
+                  todo coherente.
                 </p>
               </div>
               <div className="svc-tags">
-                <span>· Senior eng / design</span>
-                <span>· Sprints continuos</span>
-                <span>· Mensual</span>
+                <span>· Identidad corporativa</span>
+                <span>· Redes sociales</span>
+                <span>· Plataforma web</span>
+                <span>· Estrategia de contenido</span>
               </div>
               <div className="svc-price">
                 <span className="from">Desde</span>
-                <span className="amount">12.000 € / mes</span>
+                <span className="amount">1.600 €</span>
               </div>
             </article>
 
@@ -356,7 +333,7 @@ export default function Servicios() {
             y precio cerrados— en 5 días.
           </p>
           <div className="btn-row">
-            <a href="mailto:hola@hito.studio" className="btn btn-primary">hola@hito.studio <span className="arrow">→</span></a>
+            <a href="mailto:jeangomezgiraldo@gmail.com" className="btn btn-primary">jeangomezgiraldo@gmail.com <span className="arrow">→</span></a>
             <a href="/" className="btn btn-ghost">Ver trabajo</a>
           </div>
         </div>
@@ -366,9 +343,11 @@ export default function Servicios() {
       <footer className="footer" data-screen-label="Footer">
         <div className="footer-grid">
           <div className="footer-col">
-            <span className="word" style={{ fontWeight: 900, fontSize: "32px", letterSpacing: "-0.055em" }}>hito<span style={{ color: "var(--cobalt)" }}>.</span></span>
+            <span className="word" style={{ fontWeight: 900, fontSize: 32, letterSpacing: "-0.055em" }}>
+              hito<span style={{ color: "var(--cobalt)" }}>.</span>
+            </span>
             <p className="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
-            <span className="status"><span className="dot-live" />Disponible Q3 2026</span>
+
           </div>
           <div className="footer-col">
             <h6>Studio</h6>
@@ -382,7 +361,7 @@ export default function Servicios() {
           <div className="footer-col">
             <h6>Contacto</h6>
             <ul>
-              <li><a href="mailto:hola@hito.studio">hola@hito.studio</a></li>
+              <li><a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a></li>
               <li><a href="#">Calendar · 30 min</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Read.cv</a></li>
