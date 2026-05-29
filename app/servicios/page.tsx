@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import NavScrollEffect from "../components/NavScrollEffect";
 import MadridClock from "../components/MadridClock";
+import MobileMenuButton from "../components/MobileMenuButton";
 
 export const metadata: Metadata = {
   title: "Hito — Servicios",
@@ -29,7 +30,7 @@ export default function Servicios() {
             <MadridClock />
           </span>
           <span className="tb-end">
-            <a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a>
+            <a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a>
           </span>
         </div>
       </div>
@@ -49,6 +50,7 @@ export default function Servicios() {
           <a href="/servicios" className="active">Servicios</a>
           <a href="/#equipo">Equipo</a>
           <a href="#hablamos" className="nav-cta">Hablamos →</a>
+          <MobileMenuButton currentPage="servicios" />
         </div>
       </nav>
 
@@ -333,7 +335,7 @@ export default function Servicios() {
             y precio cerrados— en 5 días.
           </p>
           <div className="btn-row">
-            <a href="mailto:jeangomezgiraldo@gmail.com" className="btn btn-primary">jeangomezgiraldo@gmail.com <span className="arrow">→</span></a>
+            <a href="mailto:hitomarketingstudio@gmail.com" className="btn btn-primary">hitomarketingstudio@gmail.com <span className="arrow">→</span></a>
             <a href="/" className="btn btn-ghost">Ver trabajo</a>
           </div>
         </div>
@@ -361,7 +363,7 @@ export default function Servicios() {
           <div className="footer-col">
             <h6>Contacto</h6>
             <ul>
-              <li><a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a></li>
+              <li><a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a></li>
               <li><a href="#">Calendar · 30 min</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Read.cv</a></li>

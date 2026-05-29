@@ -97,7 +97,7 @@ export default function DiagnosticoQuiz() {
         setFase('resultado')
       })
     } catch {
-      setError('Algo ha fallado. Escríbenos directamente a hola@hito.studio')
+      setError('Algo ha fallado. Escríbenos directamente a hitomarketingstudio@gmail.com')
       transicionar(() => setFase('email'))
     }
   }
@@ -431,7 +431,7 @@ export default function DiagnosticoQuiz() {
                         <br />
                         ¿Tienes un presupuesto menor?{' '}
                         <a
-                          href="mailto:hola@hito.studio?subject=Consulta%20presupuesto"
+                          href="mailto:hitomarketingstudio@gmail.com?subject=Consulta%20presupuesto"
                           style={{ color: 'rgba(244,241,233,0.6)', textDecoration: 'underline' }}
                         >
                           Escríbenos y lo vemos.
@@ -449,7 +449,7 @@ export default function DiagnosticoQuiz() {
                   }}>
                     {diagnostico}
                   </p>
-                  <a href="mailto:hola@hito.studio" className="dq-btn">
+                  <a href="mailto:hitomarketingstudio@gmail.com" className="dq-btn">
                     Hablamos{' '}
                     <span style={{ fontFamily: 'var(--font-mono)' }}>→</span>
                   </a>

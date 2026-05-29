@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import NavScrollEffect from "../components/NavScrollEffect";
 import DiagnosticoQuiz from "../components/DiagnosticoQuiz";
+import MobileMenuButton from "../components/MobileMenuButton";
 
 export const metadata: Metadata = {
   title: "Hito — Diagnóstico de proyecto",
@@ -29,6 +30,7 @@ export default function Diagnostico() {
           <a href="/servicios">Servicios</a>
           <a href="/#equipo">Equipo</a>
           <a href="/#hablamos" className="nav-cta">Hablamos →</a>
+          <MobileMenuButton currentPage="diagnostico" />
         </div>
       </nav>
 
@@ -56,7 +58,7 @@ export default function Diagnostico() {
           <div className="footer-col">
             <h6>Contacto</h6>
             <ul>
-              <li><a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a></li>
+              <li><a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a></li>
               <li><a href="#">Calendar · 30 min</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Read.cv</a></li>

@@ -1,5 +1,6 @@
 import NavScrollEffect from "./components/NavScrollEffect";
 import MadridClock from "./components/MadridClock";
+import MobileMenuButton from "./components/MobileMenuButton";
 
 export default function Home() {
   return (
@@ -17,7 +18,7 @@ export default function Home() {
             <MadridClock />
           </span>
           <span className="tb-end">
-            <a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a>
+            <a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a>
           </span>
         </div>
       </div>
@@ -37,6 +38,7 @@ export default function Home() {
           <a href="/servicios">Servicios</a>
           <a href="#equipo">Equipo</a>
           <a href="#hablamos" className="nav-cta">Hablamos →</a>
+          <MobileMenuButton currentPage="trabajo" />
         </div>
       </nav>
 
@@ -415,8 +417,8 @@ export default function Home() {
             una propuesta concreta en 5 días.
           </p>
           <div className="btn-row">
-            <a href="mailto:jeangomezgiraldo@gmail.com" className="btn btn-primary">
-              jeangomezgiraldo@gmail.com <span className="arrow">→</span>
+            <a href="mailto:hitomarketingstudio@gmail.com" className="btn btn-primary">
+              hitomarketingstudio@gmail.com <span className="arrow">→</span>
             </a>
             <a href="/servicios" className="btn btn-ghost">Cómo trabajamos</a>
           </div>
@@ -445,7 +447,7 @@ export default function Home() {
           <div className="footer-col">
             <h6>Contacto</h6>
             <ul>
-              <li><a href="mailto:jeangomezgiraldo@gmail.com">jeangomezgiraldo@gmail.com</a></li>
+              <li><a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a></li>
               <li><a href="#">Calendar · 30 min</a></li>
               <li><a href="#">LinkedIn</a></li>
               <li><a href="#">Read.cv</a></li>
