@@ -57,7 +57,7 @@ export default function Home() {
           sprints cortos, enviamos a producción — no a Figma.
         </p>
         <div className="btn-row">
-          <a href="#hablamos" className="btn btn-primary">
+          <a href="/diagnostico" className="btn btn-primary">
             Cuéntanos tu proyecto <span className="arrow">→</span>
           </a>
           <a href="/servicios" className="btn btn-ghost">Servicios</a>

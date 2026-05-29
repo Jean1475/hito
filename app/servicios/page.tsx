@@ -106,7 +106,7 @@ export default function Servicios() {
             <article className="svc" data-screen-label="Svc · Web">
               <div className="svc-num">01</div>
               <div className="svc-body">
-                <h3>Web a medida</h3>
+                <h3>Web / App a medida</h3>
                 <p>
                   De marketing site a portfolio editorial. Diseño,
                   desarrollo, copy si lo necesitas. Stack ligero,
