@@ -209,12 +209,33 @@ export default function DiagnosticoQuiz() {
           box-shadow: 0 0 0 3px rgba(30,80,201,0.12);
         }
 
+        /* ---- heading classes (allow media query overrides) ---- */
+        .dq-header { margin-bottom: 48px; }
+        .dq-heading {
+          font-weight: 900;
+          font-size: clamp(36px, 8vw, 96px);
+          line-height: 0.92;
+          letter-spacing: -0.055em;
+          color: var(--ink);
+          margin: 0 0 18px;
+          text-wrap: balance;
+        }
+        .dq-question {
+          font-weight: 800;
+          font-size: clamp(20px, 3.5vw, 28px);
+          letter-spacing: -0.025em;
+          color: var(--ink);
+          line-height: 1.2;
+          text-wrap: balance;
+        }
+
         /* ---- button ---- */
         .dq-btn {
           display: inline-flex;
           align-items: center;
           gap: 8px;
           padding: 13px 26px;
+          min-height: 44px;
           border-radius: 999px;
           font-weight: 700;
           font-size: 15px;
@@ -271,9 +292,23 @@ export default function DiagnosticoQuiz() {
           line-height: 1.4;
         }
 
+        /* ---- tablet 641–1023px ---- */
+        @media (min-width: 641px) and (max-width: 1023px) {
+          .dq-section { padding: 140px 0 72px; }
+        }
+
+        /* ---- mobile ≤640px ---- */
         @media (max-width: 640px) {
-          .dq-section { padding: 120px 0 60px; min-height: 100svh; }
+          .dq-section {
+            padding: 110px 0 max(60px, env(safe-area-inset-bottom));
+            min-height: 100svh;
+            align-items: flex-start;
+          }
+          .dq-header { margin-bottom: 28px; }
+          .dq-heading { font-size: clamp(34px, 9vw, 48px); }
+          .dq-question { font-size: 20px; }
           .dq-enter-hint { display: none; }
+          .dq-btn { width: 100%; justify-content: center; }
         }
 
         @media (prefers-reduced-motion: reduce) {
@@ -285,7 +320,7 @@ export default function DiagnosticoQuiz() {
         <div className="wrap">
 
           {/* Encabezado */}
-          <div style={{ marginBottom: 48 }}>
+          <div className="dq-header">
             <span style={{
               fontFamily: 'var(--font-mono)',
               fontSize: 12,
@@ -299,16 +334,7 @@ export default function DiagnosticoQuiz() {
             }}>
               <span style={{ color: 'var(--cobalt)' }}>↳</span> Diagnóstico · IA
             </span>
-            <h2 style={{
-              fontWeight: 900,
-              fontSize: 'clamp(48px, 8vw, 96px)',
-              lineHeight: 0.92,
-              letterSpacing: '-0.055em',
-              color: 'var(--ink)',
-              margin: '0 0 18px',
-            }}>
-              ¿Lo construimos?
-            </h2>
+            <h2 className="dq-heading">¿Lo construimos?</h2>
             <p style={{
               fontSize: 18,
               lineHeight: 1.45,
@@ -353,14 +379,7 @@ export default function DiagnosticoQuiz() {
 
               {fase === 'quiz' && (
                 <div>
-                  <h3 style={{
-                    fontWeight: 800,
-                    fontSize: 'clamp(22px, 3vw, 28px)',
-                    letterSpacing: '-0.025em',
-                    color: 'var(--ink)',
-                    margin: '0 0 22px',
-                    lineHeight: 1.2,
-                  }}>
+                  <h3 className="dq-question" style={{ margin: '0 0 22px' }}>
                     {PREGUNTAS[pregIdx].texto}
                   </h3>
                   <textarea
@@ -390,14 +409,7 @@ export default function DiagnosticoQuiz() {
 
               {fase === 'email' && (
                 <form onSubmit={enviar}>
-                  <h3 style={{
-                    fontWeight: 800,
-                    fontSize: 'clamp(22px, 3vw, 28px)',
-                    letterSpacing: '-0.025em',
-                    color: 'var(--ink)',
-                    margin: '0 0 8px',
-                    lineHeight: 1.2,
-                  }}>
+                  <h3 className="dq-question" style={{ margin: '0 0 8px' }}>
                     ¿Dónde te mandamos el análisis?
                   </h3>
                   <p style={{
