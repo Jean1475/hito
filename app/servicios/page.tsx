@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import NavScrollEffect from "../components/NavScrollEffect";
-import MadridClock from "../components/MadridClock";
-import MobileMenuButton from "../components/MobileMenuButton";
+import SiteTopbar from "../components/SiteTopbar";
+import SiteNav from "../components/SiteNav";
+import SiteFooter from "../components/SiteFooter";
+import ScrollReveal from "../components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Hito — Servicios",
-  description: "Lo que ofrecemos: discovery, web, MVP, SaaS, embedded engineering. Cinco formas de trabajar contigo.",
+  description: "Lo que ofrecemos: discovery, web, MVP, SaaS, embedded engineering. Cuatro formas de trabajar contigo.",
 };
 
 const MarqueeStar = () => (
@@ -17,42 +18,8 @@ const MarqueeStar = () => (
 export default function Servicios() {
   return (
     <>
-      {/* Topbar */}
-      <div className="topbar" data-screen-label="Topbar">
-        <div className="topbar-inner">
-          <span className="live">
-            <span className="dot-live" />
-            Disponible desde ahora mismo.
-          </span>
-          <span className="tb-mid">
-            <span>Madrid · 40.4°N 3.7°W</span>
-            <span className="sep">/</span>
-            <MadridClock />
-          </span>
-          <span className="tb-end">
-            <a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a>
-          </span>
-        </div>
-      </div>
-
-      {/* Nav */}
-      <NavScrollEffect />
-      <nav className="nav" id="nav" data-screen-label="Nav">
-        <a className="brand" href="/" aria-label="Hito home">
-          <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
-            <path d="M 52 12 L 90 58 L 70 58 L 52 36 L 34 58 L 14 58 Z" fill="#0E0E10" />
-            <path d="M 30 66 L 50 88 L 36 88 L 30 81 L 24 88 L 10 88 Z" fill="#0E0E10" />
-          </svg>
-          <span className="word">hito<span className="dot">.</span></span>
-        </a>
-        <div className="nav-links">
-          <a href="/">Trabajo</a>
-          <a href="/servicios" className="active">Servicios</a>
-          <a href="/#equipo">Equipo</a>
-          <a href="#hablamos" className="nav-cta">Hablamos →</a>
-          <MobileMenuButton currentPage="servicios" />
-        </div>
-      </nav>
+      <SiteTopbar />
+      <SiteNav />
 
       {/* Hero */}
       <header className="wrap hero" data-screen-label="Hero">
@@ -61,10 +28,10 @@ export default function Servicios() {
           Scope · plazo · precio cerrados<br />
           Desde el día uno
         </div>
-        <span className="eyebrow">Servicios · 5 formas de trabajar</span>
+        <span className="eyebrow">Servicios · 4 formas de trabajar</span>
         <h1 className="h-display">Lo que<br />hacemos<span className="dot">.</span></h1>
         <p className="lede">
-          No vendemos horas. Vendemos hitos. Cinco formas concretas
+          No vendemos horas. Vendemos hitos. Cuatro formas concretas
           de empezar a trabajar con nosotros — todas con scope, plazo
           y precio cerrados desde el día uno.
         </p>
@@ -202,7 +169,6 @@ export default function Servicios() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Proceso · 4 fases</span>
               <h2>Cómo<br />trabajamos.</h2>
             </div>
             <p className="desc">
@@ -213,7 +179,7 @@ export default function Servicios() {
             </p>
           </div>
 
-          <div className="process">
+          <div className="process" data-stagger>
             <div className="step">
               <div className="num">01 · Descubrir</div>
               <h4>Entender</h4>
@@ -243,7 +209,6 @@ export default function Servicios() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Stack · Lo que usamos a diario</span>
               <h2>Boring tech.<br />Software<br />que aguanta.</h2>
             </div>
             <p className="desc">
@@ -290,7 +255,6 @@ export default function Servicios() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Preguntas · que recibimos cada semana</span>
               <h2>Preguntas<br />reales<span style={{ color: "var(--cobalt)" }}>.</span></h2>
             </div>
             <p className="desc">
@@ -318,7 +282,7 @@ export default function Servicios() {
               <div className="svc-num">Q3</div>
               <div className="svc-body" style={{ gridColumn: "span 3" }}>
                 <h3 style={{ fontSize: "24px" }}>¿Y si necesito algo que no está en los servicios?</h3>
-                <p>Lo hablamos. Casi todo lo que hacemos cabe en uno de los cinco formatos — y si no, te decimos honestamente quién lo puede hacer mejor.</p>
+                <p>Lo hablamos. Casi todo lo que hacemos cabe en uno de los cuatro formatos — y si no, te decimos honestamente quién lo puede hacer mejor.</p>
               </div>
             </article>
           </div>
@@ -328,64 +292,21 @@ export default function Servicios() {
       {/* CTA */}
       <section className="cta" id="hablamos" data-screen-label="CTA">
         <div className="wrap">
-          <span className="eyebrow">Una llamada · 30 minutos · sin compromiso</span>
           <h2 className="h-display">Cuéntanos<br />tu hito<span className="dot">.</span></h2>
           <p className="lede">
-            Si encaja, te mandamos una propuesta concreta —scope, plazo
-            y precio cerrados— en 5 días.
+            Si encaja, te mandamos una propuesta concreta — scope, plazo
+            y precio cerrados — en 5 días.
           </p>
           <div className="btn-row">
             <a href="mailto:hitomarketingstudio@gmail.com" className="btn btn-primary">hitomarketingstudio@gmail.com <span className="arrow">→</span></a>
             <a href="/" className="btn btn-ghost">Ver trabajo</a>
           </div>
+          <p className="cta-sub">Una llamada · 30 minutos · sin compromiso</p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer" data-screen-label="Footer">
-        <div className="footer-grid">
-          <div className="footer-col">
-            <span className="word" style={{ fontWeight: 900, fontSize: 32, letterSpacing: "-0.055em" }}>
-              hito<span style={{ color: "var(--cobalt)" }}>.</span>
-            </span>
-            <p className="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
-
-          </div>
-          <div className="footer-col">
-            <h6>Studio</h6>
-            <ul>
-              <li><a href="/">Trabajo</a></li>
-              <li><a href="/servicios">Servicios</a></li>
-              <li><a href="/#equipo">Equipo</a></li>
-              <li><a href="#hablamos">Hablamos</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h6>Contacto</h6>
-            <ul>
-              <li><a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a></li>
-              <li><a href="#">Calendar · 30 min</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Read.cv</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h6>Dónde</h6>
-            <ul>
-              <li>C / del Pez 12, 3°</li>
-              <li>28004 — Madrid</li>
-              <li>40.4° N · 3.7° W</li>
-              <li>Embedded · CET</li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <span>© MMXXVI — Hito Studio S.L.</span>
-          <span>B-77 419 220</span>
-          <span>Hecho con cariño · Madrid</span>
-        </div>
-        <div className="bigmark" aria-hidden="true">hito<span className="dot">.</span></div>
-      </footer>
+      <SiteFooter />
+      <ScrollReveal />
     </>
   );
 }

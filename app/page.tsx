@@ -1,46 +1,13 @@
-import NavScrollEffect from "./components/NavScrollEffect";
-import MadridClock from "./components/MadridClock";
-import MobileMenuButton from "./components/MobileMenuButton";
+import SiteTopbar from "./components/SiteTopbar";
+import SiteNav from "./components/SiteNav";
+import SiteFooter from "./components/SiteFooter";
+import ScrollReveal from "./components/ScrollReveal";
 
 export default function Home() {
   return (
     <>
-      {/* Topbar */}
-      <div className="topbar" data-screen-label="Topbar">
-        <div className="topbar-inner">
-          <span className="live">
-            <span className="dot-live" />
-            Disponible desde ahora mismo.
-          </span>
-          <span className="tb-mid">
-            <span>Madrid · 40.4°N 3.7°W</span>
-            <span className="sep">/</span>
-            <MadridClock />
-          </span>
-          <span className="tb-end">
-            <a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a>
-          </span>
-        </div>
-      </div>
-
-      {/* Nav */}
-      <NavScrollEffect />
-      <nav className="nav" id="nav" data-screen-label="Nav">
-        <a className="brand" href="/" aria-label="Hito home">
-          <svg viewBox="0 0 100 100" width="30" height="30" aria-hidden="true">
-            <path d="M 52 12 L 90 58 L 70 58 L 52 36 L 34 58 L 14 58 Z" fill="#0E0E10" />
-            <path d="M 30 66 L 50 88 L 36 88 L 30 81 L 24 88 L 10 88 Z" fill="#0E0E10" />
-          </svg>
-          <span className="word">hito<span className="dot">.</span></span>
-        </a>
-        <div className="nav-links">
-          <a href="/" className="active">Trabajo</a>
-          <a href="/servicios">Servicios</a>
-          <a href="#equipo">Equipo</a>
-          <a href="#hablamos" className="nav-cta">Hablamos →</a>
-          <MobileMenuButton currentPage="trabajo" />
-        </div>
-      </nav>
+      <SiteTopbar />
+      <SiteNav />
 
       {/* Hero */}
       <header className="wrap hero" data-screen-label="Hero">
@@ -90,7 +57,7 @@ export default function Home() {
               alt="Bea Casas — landing en MacBook Pro"
             />
             <a href="#trabajo" className="hs-tag t3">
-              <span className="arr">↳</span>Ver caso completo
+              <span className="arr">↳</span>Ver proyectos
             </a>
           </div>
         </div>
@@ -123,8 +90,8 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Selected work · 2024 – 2026</span>
               <h2>Cosas que<br />hemos enviado.</h2>
+              <p className="work-range">2024 – 2026</p>
             </div>
             <p className="desc">
               Una selección de proyectos recientes. Páginas, MVPs y producto
@@ -134,8 +101,13 @@ export default function Home() {
           </div>
 
           {/* Featured project */}
-          <div className="work-featured">
-            <article className="work-card" data-screen-label="Work · Luma OS">
+          <div className="work-featured" data-reveal>
+            <article
+              className="work-card"
+              data-screen-label="Work · Luma OS"
+              tabIndex={0}
+              aria-label="Luma OS — Portfolio dashboard para Luma Capital, 2025, SaaS, 8 semanas"
+            >
               <span className="work-idx">F · 01 — Featured</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
@@ -169,9 +141,14 @@ export default function Home() {
           </div>
 
           {/* Grid 2x2 */}
-          <div className="work-grid">
+          <div className="work-grid" data-stagger>
 
-            <article className="work-card" data-screen-label="Work · Bardo">
+            <article
+              className="work-card"
+              data-screen-label="Work · Bardo"
+              tabIndex={0}
+              aria-label="Bardo — Editorial poético para Bardo Books, 2025, 4 semanas"
+            >
               <span className="work-idx">02</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
@@ -201,7 +178,12 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="work-card" data-screen-label="Work · Cantera">
+            <article
+              className="work-card"
+              data-screen-label="Work · Cantera"
+              tabIndex={0}
+              aria-label="Cantera — ATS para talento técnico, Cantera HR, 2024, MVP, 6 semanas"
+            >
               <span className="work-idx">03</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
@@ -241,7 +223,12 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="work-card" data-screen-label="Work · Forja Studio">
+            <article
+              className="work-card"
+              data-screen-label="Work · Forja Studio"
+              tabIndex={0}
+              aria-label="Forja — Web del studio, Forja Studio, 2024, 3 semanas"
+            >
               <span className="work-idx">04</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
@@ -272,7 +259,12 @@ export default function Home() {
               </div>
             </article>
 
-            <article className="work-card" data-screen-label="Work · Veta">
+            <article
+              className="work-card"
+              data-screen-label="Work · Veta"
+              tabIndex={0}
+              aria-label="Veta — Web consultora, Veta Consulting, 2024, 2 semanas"
+            >
               <span className="work-idx">05</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb">
@@ -309,23 +301,6 @@ export default function Home() {
 
           </div>
 
-          {/* Clients list
-          <div className="clients">
-            <div className="clients-head">Y también hemos trabajado con</div>
-            <div className="clients-list">
-              <span>Indi</span><span className="sep">·</span>
-              <span>Estela</span><span className="sep">·</span>
-              <span>Vela Studio</span><span className="sep">·</span>
-              <span>Norte Capital</span><span className="sep">·</span>
-              <span>Hilo Labs</span><span className="sep">·</span>
-              <span>Mira</span><span className="sep">·</span>
-              <span>Onda</span><span className="sep">·</span>
-              <span>Trazo</span><span className="sep">·</span>
-              <span>Foco</span><span className="sep">·</span>
-              <span>Cima</span>
-            </div>
-          </div> */}
-
           {/* Pull quote */}
           <div className="pullquote" data-screen-label="Pull quote">
             <div className="pq-label">
@@ -350,8 +325,8 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <span className="eyebrow">Equipo · ahora mismo 3 + 1</span>
               <h2><br />Sin agencias<br />intermedias.</h2>
+              <p className="work-range">Ahora mismo · 3 + 1</p>
             </div>
             <p className="desc">
               Somos un equipo pequeño y deliberado. No
@@ -360,7 +335,7 @@ export default function Home() {
           </div>
 
           {/* Principios */}
-          <div className="principios" data-screen-label="Principios">
+          <div className="principios" data-screen-label="Principios" data-stagger>
             <div className="principio">
               <div className="pnum">Principio · 01</div>
               <h4>Enviar &gt; pulir.</h4>
@@ -382,33 +357,12 @@ export default function Home() {
               <p>Stack estándar (Next, Postgres, Tailwind). Si mañana contratas un equipo interno, no tienen que reescribirlo.</p>
             </div>
           </div>
-
-          {/* Numbers
-          <div className="numbers" data-screen-label="Numbers">
-            <div className="nbox">
-              <div className="nval">23<span className="unit">proyectos</span></div>
-              <div className="nlabel">Enviados 2024 – 2026</div>
-            </div>
-            <div className="nbox">
-              <div className="nval">6<span className="unit">sem · media</span></div>
-              <div className="nlabel">Discovery a producción</div>
-            </div>
-            <div className="nbox">
-              <div className="nval">€11M<span className="unit">raised</span></div>
-              <div className="nlabel">Por founders que acompañamos</div>
-            </div>
-            <div className="nbox">
-              <div className="nval">94<span className="unit">/ 100</span></div>
-              <div className="nlabel">NPS — últimos 12 meses</div>
-            </div>
-          </div> */}
         </div>
       </section>
 
       {/* CTA */}
       <section className="cta" id="hablamos" data-screen-label="CTA">
         <div className="wrap">
-          <span className="eyebrow">Una llamada · 30 minutos · sin compromiso</span>
           <h2 className="h-display">
             ¿Lo<br />construimos<span className="dot">?</span>
           </h2>
@@ -422,54 +376,12 @@ export default function Home() {
             </a>
             <a href="/servicios" className="btn btn-ghost">Cómo trabajamos</a>
           </div>
+          <p className="cta-sub">Una llamada · 30 minutos · sin compromiso</p>
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer" data-screen-label="Footer">
-        <div className="footer-grid">
-          <div className="footer-col">
-            <span className="word" style={{ fontWeight: 900, fontSize: 32, letterSpacing: "-0.055em" }}>
-              hito<span style={{ color: "var(--cobalt)" }}>.</span>
-            </span>
-            <p className="blurb">Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web con founders y equipos pequeños desde 2026.</p>
-
-          </div>
-          <div className="footer-col">
-            <h6>Studio</h6>
-            <ul>
-              <li><a href="/">Trabajo</a></li>
-              <li><a href="/servicios">Servicios</a></li>
-              <li><a href="#equipo">Equipo</a></li>
-              <li><a href="#hablamos">Hablamos</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h6>Contacto</h6>
-            <ul>
-              <li><a href="mailto:hitomarketingstudio@gmail.com">hitomarketingstudio@gmail.com</a></li>
-              <li><a href="#">Calendar · 30 min</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="#">Read.cv</a></li>
-            </ul>
-          </div>
-          <div className="footer-col">
-            <h6>Dónde</h6>
-            <ul>
-              <li>C / del Pez 12, 3°</li>
-              <li>28004 — Madrid</li>
-              <li>40.4° N · 3.7° W</li>
-              <li>Embedded · CET</li>
-            </ul>
-          </div>
-        </div>
-        <div className="footer-bottom">
-          <span>© MMXXVI — Hito Studio S.L.</span>
-          <span>B-77 419 220</span>
-          <span>Hecho con cariño · Madrid</span>
-        </div>
-        <div className="bigmark" aria-hidden="true">hito<span className="dot">.</span></div>
-      </footer>
+      <SiteFooter />
+      <ScrollReveal />
     </>
   );
 }
