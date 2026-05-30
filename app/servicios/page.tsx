@@ -3,10 +3,107 @@ import SiteTopbar from "../components/SiteTopbar";
 import SiteNav from "../components/SiteNav";
 import SiteFooter from "../components/SiteFooter";
 import ScrollReveal from "../components/ScrollReveal";
+import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Hito — Servicios",
-  description: "Lo que ofrecemos: discovery, web, MVP, SaaS, embedded engineering. Cuatro formas de trabajar contigo.",
+  title: "Servicios — Web, MVP, SaaS y Marketing digital en Madrid",
+  description:
+    "Cuatro servicios con scope, plazo y precio cerrados: web a medida desde 650€, MVP, SaaS completo y marketing digital. Studio de producto en Madrid.",
+  alternates: {
+    canonical: "https://hitostudio.es/servicios",
+  },
+  openGraph: {
+    url: "https://hitostudio.es/servicios",
+  },
+};
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: [
+    {
+      "@type": "Question",
+      name: "¿Trabajáis con equity en lugar de fee?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Sí, pero solo en proyectos seleccionados (equipo formado, ronda cerrada, hito claro). Hablamos.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Os quedáis con el código?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "No. Repositorio, dominio, cuentas — todo a tu nombre desde el día uno. Cuando nos vamos, te queda absolutamente todo.",
+      },
+    },
+    {
+      "@type": "Question",
+      name: "¿Y si necesito algo que no está en los servicios?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Lo hablamos. Casi todo lo que hacemos cabe en uno de los cuatro formatos — y si no, te decimos honestamente quién lo puede hacer mejor.",
+      },
+    },
+  ],
+};
+
+const servicesSchema = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      name: "Web / App a medida",
+      provider: { "@type": "Organization", name: "Hito Studio" },
+      description:
+        "De marketing site a portfolio editorial. Diseño, desarrollo, copy si lo necesitas. Stack ligero, edición fácil, performance 95+.",
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: "650",
+        availability: "https://schema.org/InStock",
+      },
+    },
+    {
+      "@type": "Service",
+      name: "MVP",
+      provider: { "@type": "Organization", name: "Hito Studio" },
+      description:
+        "De idea validada a producto vivo en producción. Sprints cerrados de 2 semanas, demos cada viernes.",
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: "900",
+        availability: "https://schema.org/InStock",
+      },
+    },
+    {
+      "@type": "Service",
+      name: "SaaS completo",
+      provider: { "@type": "Organization", name: "Hito Studio" },
+      description:
+        "Producto SaaS de extremo a extremo: arquitectura, auth, billing, dashboard, onboarding.",
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: "1300",
+        availability: "https://schema.org/InStock",
+      },
+    },
+    {
+      "@type": "Service",
+      name: "Marketing digital completo",
+      provider: { "@type": "Organization", name: "Hito Studio" },
+      description:
+        "Identidad corporativa, presencia digital y estrategia de redes desde cero.",
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "EUR",
+        price: "1600",
+        availability: "https://schema.org/InStock",
+      },
+    },
+  ],
 };
 
 const MarqueeStar = () => (
@@ -18,6 +115,8 @@ const MarqueeStar = () => (
 export default function Servicios() {
   return (
     <>
+      <JsonLd data={faqSchema} />
+      <JsonLd data={servicesSchema} />
       <SiteTopbar />
       <SiteNav />
 
@@ -149,10 +248,10 @@ export default function Servicios() {
                 </p>
               </div>
               <div className="svc-tags">
-                <span>· Identidad corporativa</span>
+                <span>· Identidad</span>
                 <span>· Redes sociales</span>
-                <span>· Plataforma web</span>
-                <span>· Estrategia de contenido</span>
+                <span>· Web</span>
+                <span>· Contenido</span>
               </div>
               <div className="svc-price">
                 <span className="from">Desde</span>

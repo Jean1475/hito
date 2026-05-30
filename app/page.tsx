@@ -1,11 +1,50 @@
+import type { Metadata } from "next";
+import Image from "next/image";
 import SiteTopbar from "./components/SiteTopbar";
 import SiteNav from "./components/SiteNav";
 import SiteFooter from "./components/SiteFooter";
 import ScrollReveal from "./components/ScrollReveal";
+import { JsonLd } from "./components/JsonLd";
+
+export const metadata: Metadata = {
+  title: "Hito — Studio de producto digital en Madrid",
+  description:
+    "Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños. Embedded con tu equipo, sprints cortos, enviamos a producción — no a Figma.",
+  alternates: {
+    canonical: "https://hitostudio.es",
+  },
+  openGraph: {
+    url: "https://hitostudio.es",
+  },
+};
+
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": ["Organization", "ProfessionalService"],
+  name: "Hito Studio",
+  description:
+    "Studio de producto digital en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños.",
+  url: "https://hitostudio.es",
+  email: "hitomarketingstudio@gmail.com",
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Madrid",
+    addressCountry: "ES",
+  },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: "40.4",
+    longitude: "-3.7",
+  },
+  areaServed: { "@type": "Country", name: "España" },
+  priceRange: "€€",
+  foundingDate: "2026",
+};
 
 export default function Home() {
   return (
     <>
+      <JsonLd data={organizationSchema} />
       <SiteTopbar />
       <SiteNav />
 
@@ -52,9 +91,12 @@ export default function Home() {
               <span className="pulse" />
               En producción
             </span>
-            <img
+            <Image
               src="/hito/assets/bea-casas-mockup.png"
               alt="Bea Casas — landing en MacBook Pro"
+              width={1200}
+              height={750}
+              style={{ width: "100%", height: "auto" }}
             />
             <a href="#trabajo" className="hs-tag t3">
               <span className="arr">↳</span>Ver proyectos
@@ -325,7 +367,7 @@ export default function Home() {
         <div className="wrap">
           <div className="section-head">
             <div>
-              <h2><br />Sin agencias<br />intermedias.</h2>
+              <h2>Sin<br />agencias<br />intermedias.</h2>
               <p className="work-range">Ahora mismo · 3 + 1</p>
             </div>
             <p className="desc">

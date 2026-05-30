@@ -4,8 +4,15 @@ import DiagnosticoQuiz from "../components/DiagnosticoQuiz";
 import SiteFooter from "../components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "Hito — Diagnóstico de proyecto",
-  description: "3 preguntas. La IA te dice si encajamos y qué servicio necesitas.",
+  title: "Diagnóstico de proyecto — ¿Encajamos?",
+  description:
+    "3 preguntas. La IA te dice si encajamos y qué servicio necesitas para tu proyecto.",
+  alternates: {
+    canonical: "https://hitostudio.es/diagnostico",
+  },
+  openGraph: {
+    url: "https://hitostudio.es/diagnostico",
+  },
 };
 
 export default function Diagnostico() {
