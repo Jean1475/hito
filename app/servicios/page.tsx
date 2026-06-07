@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   description:
     "Cuatro servicios con scope, plazo y precio cerrados: web a medida desde 650€, MVP, SaaS completo y marketing digital. Studio de producto en Madrid.",
   alternates: {
-    canonical: "https://hitostudio.es/servicios",
+    canonical: "https://hitomarketing.com/servicios",
   },
   openGraph: {
-    url: "https://hitostudio.es/servicios",
+    url: "https://hitomarketing.com/servicios",
   },
 };
 

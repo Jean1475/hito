@@ -16,9 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hitostudio.es"),
+  metadataBase: new URL("https://hitomarketing.com"),
   title: {
-    default: "Hito — Studio de producto digital en Madrid",
+    default: "Hito — Desarrollo de MVP y SaaS en Madrid",
     template: "%s | Hito Studio",
   },
   description:
@@ -34,6 +34,11 @@ export const metadata: Metadata = {
   authors: [{ name: "Hito Studio" }],
   creator: "Hito Studio",
   publisher: "Hito Studio",
+  icons: {
+    icon: "/icon.svg",
+    shortcut: "/icon.svg",
+    apple: "/icon.svg",
+  },
   robots: {
     index: true,
     follow: true,
@@ -42,26 +47,17 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://hitostudio.es",
+    url: "https://hitomarketing.com",
     siteName: "Hito Studio",
-    title: "Hito — Studio de producto digital en Madrid",
+    title: "Hito — Desarrollo de MVP y SaaS en Madrid",
     description:
       "Studio de producto en Madrid. MVPs, SaaS y páginas web para founders y equipos pequeños. Sprints cortos, enviamos a producción.",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "Hito Studio — Producto digital desde Madrid",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hito — Studio de producto digital en Madrid",
+    title: "Hito — Desarrollo de MVP y SaaS en Madrid",
     description:
       "Studio de producto en Madrid. MVPs, SaaS y páginas web para founders y equipos pequeños.",
-    images: ["/og-image.png"],
   },
 };
 

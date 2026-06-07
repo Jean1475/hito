@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 
-const BASE = "https://hitostudio.es";
+const BASE = "https://hitomarketing.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
@@ -21,6 +21,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
+    },
+    {
+      url: `${BASE}/trabajo/daruma`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/trabajo/bea-casas`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    },
+    {
+      url: `${BASE}/trabajo/abogados`,
+      lastModified: new Date(),
+      changeFrequency: "yearly",
+      priority: 0.6,
     },
   ];
 }

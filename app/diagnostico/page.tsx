@@ -8,10 +8,10 @@ export const metadata: Metadata = {
   description:
     "3 preguntas. La IA te dice si encajamos y qué servicio necesitas para tu proyecto.",
   alternates: {
-    canonical: "https://hitostudio.es/diagnostico",
+    canonical: "https://hitomarketing.com/diagnostico",
   },
   openGraph: {
-    url: "https://hitostudio.es/diagnostico",
+    url: "https://hitomarketing.com/diagnostico",
   },
 };
 
