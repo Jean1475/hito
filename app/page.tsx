@@ -7,9 +7,8 @@ import ScrollReveal from "./components/ScrollReveal";
 import { JsonLd } from "./components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Hito — Studio de producto digital en Madrid",
   description:
-    "Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños. Embedded con tu equipo, sprints cortos, enviamos a producción — no a Figma.",
+    "Desarrollo web para empresas, MVP para validar tu idea y SaaS a medida. Studio de producto en Madrid para founders y equipos pequeños. Precio y plazo cerrados desde el día uno, sprints cortos, enviamos a producción — no a Figma.",
   alternates: {
     canonical: "https://www.hitomarketing.com",
   },
@@ -24,7 +23,7 @@ const organizationSchema = {
   "@type": ["Organization", "ProfessionalService"],
   name: "Hito Studio",
   description:
-    "Studio de producto digital en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños.",
+    "Desarrollo web para empresas, MVP para startups y SaaS a medida. Studio de producto digital en Madrid para founders y equipos pequeños.",
   url: "https://www.hitomarketing.com",
   email: "hitomarketingstudio@gmail.com",
   address: {

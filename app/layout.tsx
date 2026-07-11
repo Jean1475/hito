@@ -18,18 +18,20 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.hitomarketing.com"),
   title: {
-    default: "Hito — Desarrollo de MVP y SaaS en Madrid",
+    default: "Desarrollo Web, MVP y SaaS para Startups | Hito Studio",
     template: "%s | Hito Studio",
   },
   description:
-    "Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños. Embedded con tu equipo, sprints cortos, enviamos a producción — no a Figma.",
+    "Desarrollo web para empresas, MVP para validar tu idea y SaaS a medida. Studio de producto en Madrid para founders y equipos pequeños. Precio y plazo cerrados desde el día uno, sprints cortos, enviamos a producción — no a Figma.",
   keywords: [
-    "studio producto digital Madrid",
-    "desarrollo MVP Madrid",
-    "agencia SaaS España",
-    "desarrollo web Madrid",
-    "producto digital founders",
-    "embedded engineering",
+    "desarrollo web para empresas",
+    "desarrollo web para startups",
+    "desarrollo de MVP para startups",
+    "cuánto cuesta un MVP",
+    "agencia de desarrollo SaaS",
+    "desarrollo de SaaS a medida",
+    "auditoría web para startups",
+    "agencia de desarrollo web Madrid",
   ],
   authors: [{ name: "Hito Studio" }],
   creator: "Hito Studio",
@@ -49,15 +51,15 @@ export const metadata: Metadata = {
     locale: "es_ES",
     url: "https://www.hitomarketing.com",
     siteName: "Hito Studio",
-    title: "Hito — Desarrollo de MVP y SaaS en Madrid",
+    title: "Desarrollo Web, MVP y SaaS para Startups | Hito Studio",
     description:
-      "Studio de producto en Madrid. MVPs, SaaS y páginas web para founders y equipos pequeños. Sprints cortos, enviamos a producción.",
+      "Desarrollo web para empresas, MVP para validar tu idea y SaaS a medida. Studio de producto en Madrid. Precio y plazo cerrados desde el día uno.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Hito — Desarrollo de MVP y SaaS en Madrid",
+    title: "Desarrollo Web, MVP y SaaS para Startups | Hito Studio",
     description:
-      "Studio de producto en Madrid. MVPs, SaaS y páginas web para founders y equipos pequeños.",
+      "Desarrollo web para empresas, MVP para validar tu idea y SaaS a medida. Studio de producto en Madrid.",
   },
 };
 

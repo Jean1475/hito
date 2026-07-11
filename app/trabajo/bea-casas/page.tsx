@@ -6,7 +6,7 @@ import SiteFooter from "../../components/SiteFooter";
 import ScrollReveal from "../../components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Bea Casas — Marketplace | Hito Studio",
+  title: "Bea Casas — Marketplace",
   description:
     "Marketplace desarrollado para Bea Casas. Plataforma web completa con Next.js y Postgres. Hito Studio, Madrid.",
   alternates: {

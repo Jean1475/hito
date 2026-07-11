@@ -16,6 +16,7 @@ export default function SiteFooter() {
           <ul>
             <li><a href="/">Trabajo</a></li>
             <li><a href="/servicios">Servicios</a></li>
+            <li><a href="/precios">Precios</a></li>
             <li><a href="/#equipo">Equipo</a></li>
             <li><a href="/#hablamos">Hablamos</a></li>
           </ul>

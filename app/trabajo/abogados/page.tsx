@@ -6,7 +6,7 @@ import SiteFooter from "../../components/SiteFooter";
 import ScrollReveal from "../../components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Arca Legal — Web corporativa | Hito Studio",
+  title: "Arca Legal — Web corporativa",
   description:
     "Web corporativa para Arca Legal, despacho de abogados. Diseño editorial oscuro, sección de casos, métricas de resultados y equipo. Hito Studio, Madrid.",
   alternates: {

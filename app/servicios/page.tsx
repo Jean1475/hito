@@ -6,9 +6,9 @@ import ScrollReveal from "../components/ScrollReveal";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Servicios — Web, MVP y SaaS en Madrid",
+  title: "Servicios y Precios: Web, MVP, SaaS",
   description:
-    "Cuatro servicios con scope, plazo y precio cerrados: web a medida desde 650€, MVP, SaaS completo y marketing digital. Studio de producto en Madrid.",
+    "Cuánto cuesta una web, un MVP o un SaaS a medida: precios desde 650€, scope y plazo cerrados desde el día uno. Desarrollo web para empresas y startups en Madrid.",
   alternates: {
     canonical: "https://www.hitomarketing.com/servicios",
   },
@@ -103,6 +103,9 @@ export default function Servicios() {
           de empezar a trabajar con nosotros — todas con scope, plazo
           y precio cerrados desde el día uno.
         </p>
+        <div className="btn-row">
+          <a href="/precios" className="btn btn-ghost">Ver todos los precios →</a>
+        </div>
         <div className="hero-index" aria-hidden="true">
           <b>4</b>
           <span>servicios · desde 650€</span>

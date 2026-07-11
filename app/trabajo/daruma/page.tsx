@@ -6,7 +6,7 @@ import SiteFooter from "../../components/SiteFooter";
 import ScrollReveal from "../../components/ScrollReveal";
 
 export const metadata: Metadata = {
-  title: "Daruma — Pokétienda | Hito Studio",
+  title: "Daruma — Pokétienda",
   description:
     "Web para Daruma, tienda física de cartas Pokémon, manga y cómic en Leganés, Madrid. Catálogo de stock, calendario de eventos y ficha de visita. Hito Studio.",
   alternates: {
