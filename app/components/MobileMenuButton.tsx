@@ -42,6 +42,9 @@ export default function MobileMenuButton({ currentPage }: Props) {
         <a href="/#equipo" onClick={close}>
           Equipo
         </a>
+        <a href="/diagnostico" className={currentPage === "diagnostico" ? "active" : ""} onClick={close}>
+          Diagnóstico
+        </a>
         <a href={currentPage === "trabajo" ? "#hablamos" : "/#hablamos"} onClick={close}>
           Hablamos
         </a>

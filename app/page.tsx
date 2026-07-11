@@ -244,6 +244,69 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Por qué Hito */}
+      <section className="section razones-section" id="por-que-hito" data-screen-label="Por qué Hito">
+        <div className="wrap">
+          <div className="section-head">
+            <div>
+              <h2>Por qué<br />trabajar con<br />nosotros.</h2>
+            </div>
+            <p className="desc">
+              No somos la agencia más grande de Madrid. Somos la que
+              responde al mail, cumple la fecha y te deja el código
+              limpio cuando se acaba el sprint.
+            </p>
+          </div>
+
+          <div className="razones" data-stagger>
+            <div className="razon">
+              <span className="razon-idx">01</span>
+              <div className="razon-body">
+                <h3>Hablas con quien escribe el código.</h3>
+                <p>
+                  No hay account manager que traduce tus mensajes a un
+                  equipo en otro país. El mismo dev que está en el sprint
+                  responde tus dudas en Slack, el mismo día.
+                </p>
+              </div>
+            </div>
+            <div className="razon">
+              <span className="razon-idx">02</span>
+              <div className="razon-body">
+                <h3>Precio cerrado, sin sorpresas al final.</h3>
+                <p>
+                  Cotizamos por hito, no por hora. Sabes desde el día uno
+                  qué vas a pagar y qué vas a recibir — sin partes extra
+                  de "alcance ampliado" a mitad de proyecto.
+                </p>
+              </div>
+            </div>
+            <div className="razon">
+              <span className="razon-idx">03</span>
+              <div className="razon-body">
+                <h3>Salimos con algo que funciona, no con un prototipo.</h3>
+                <p>
+                  Daruma, Bea Casas y Arca Legal están en producción,
+                  con usuarios reales usándolos hoy. No hacemos demos
+                  para pitch decks.
+                </p>
+              </div>
+            </div>
+            <div className="razon">
+              <span className="razon-idx">04</span>
+              <div className="razon-body">
+                <h3>Te vas con el proyecto, no nosotros con él.</h3>
+                <p>
+                  Repo, dominio y cuentas a tu nombre desde el primer
+                  commit. Si mañana contratas un equipo interno, no
+                  dependen de nosotros para tocar nada.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Equipo */}
       <section className="section" id="equipo" data-screen-label="Equipo">
         <div className="wrap">

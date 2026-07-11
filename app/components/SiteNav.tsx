@@ -25,6 +25,7 @@ export default function SiteNav() {
           <a href="/" className={!isServicios && !isDiagnostico ? "active" : ""}>Trabajo</a>
           <a href="/servicios" className={isServicios ? "active" : ""}>Servicios</a>
           <a href="/#equipo">Equipo</a>
+          <a href="/diagnostico" className={isDiagnostico ? "active" : ""}>Diagnóstico</a>
           <a
             href={isDiagnostico ? "/#hablamos" : "#hablamos"}
             className="nav-cta"
