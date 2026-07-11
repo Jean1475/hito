@@ -36,8 +36,8 @@ export default function Privacidad() {
 
           <h2 style={{ fontSize: 24, marginBottom: 12 }}>Responsable del tratamiento</h2>
           <p style={{ marginBottom: 16 }}>
-            Hito Studio S.L., con domicilio en C/ del Pez 12, 3°, 28004
-            Madrid, y correo de contacto hitomarketingstudio@gmail.com.
+            Hito Studio S.L., con domicilio social en Madrid, España, y
+            correo de contacto hitomarketingstudio@gmail.com.
           </p>
 
           <h2 style={{ fontSize: 24, marginBottom: 12 }}>Qué datos recogemos y con qué finalidad</h2>

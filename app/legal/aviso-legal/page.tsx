@@ -35,7 +35,7 @@ export default function AvisoLegal() {
           <ul style={{ marginBottom: 24, lineHeight: 1.8 }}>
             <li><strong>Titular:</strong> Hito Studio S.L.</li>
             <li><strong>NIF/CIF:</strong> B-77419220</li>
-            <li><strong>Domicilio:</strong> C/ del Pez 12, 3°, 28004 Madrid, España</li>
+            <li><strong>Domicilio social:</strong> Madrid, España</li>
             <li><strong>Contacto:</strong> hitomarketingstudio@gmail.com</li>
           </ul>
 

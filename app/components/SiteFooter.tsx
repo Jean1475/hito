@@ -29,8 +29,7 @@ export default function SiteFooter() {
         <div className="footer-col">
           <p className="footer-label">Dónde</p>
           <ul>
-            <li>C / del Pez 12, 3°</li>
-            <li>28004 — Madrid</li>
+            <li>Madrid, España</li>
             <li>40.4° N · 3.7° W</li>
             <li>Embedded · CET</li>
           </ul>
