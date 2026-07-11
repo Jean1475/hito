@@ -315,33 +315,11 @@ export default function Home() {
               <p className="work-range">Ahora mismo · 3 + 1</p>
             </div>
             <p className="desc">
-              Somos un equipo pequeño y deliberado. No
-              hay capas de PMs, ni cuentas.
+              Somos un equipo pequeño y deliberado: los mismos 3-4
+              nombres en cada proyecto, de la primera llamada al
+              último commit. No hay capas de PMs, ni cuentas, ni
+              rotación de gente a mitad de sprint.
             </p>
-          </div>
-
-          {/* Principios */}
-          <div className="principios" data-screen-label="Principios" data-stagger>
-            <div className="principio">
-              <div className="pnum">Principio · 01</div>
-              <h4>Enviar &gt; pulir.</h4>
-              <p>Mejor algo en manos de usuarios el viernes que un Figma perfecto en tres semanas. Iteramos sobre lo real.</p>
-            </div>
-            <div className="principio">
-              <div className="pnum">Principio · 02</div>
-              <h4>Embedded, no agencia.</h4>
-              <p>Slack, standups, repo. Trabajamos como un miembro más de tu equipo durante el sprint. Sin black boxes.</p>
-            </div>
-            <div className="principio">
-              <div className="pnum">Principio · 03</div>
-              <h4>Scope chico, ambición grande.</h4>
-              <p>Sprints de 4 a 8 semanas. Si no cabe, lo partimos en dos. La cadencia importa más que el plan.</p>
-            </div>
-            <div className="principio">
-              <div className="pnum">Principio · 04</div>
-              <h4>Código que heredas.</h4>
-              <p>Stack estándar (Next, Postgres, Tailwind). Si mañana contratas un equipo interno, no tienen que reescribirlo.</p>
-            </div>
           </div>
         </div>
       </section>

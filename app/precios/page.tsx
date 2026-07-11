@@ -55,7 +55,7 @@ export default function Precios() {
           </div>
 
           <div className="services-list">
-            <article className="svc" data-screen-label="Precio · Web">
+            <article className="svc" id="precio-web" data-screen-label="Precio · Web">
               <div className="svc-num">01</div>
               <div className="svc-body">
                 <h3>Web / App a medida</h3>
@@ -73,7 +73,7 @@ export default function Precios() {
               </div>
             </article>
 
-            <article className="svc" data-screen-label="Precio · MVP">
+            <article className="svc" id="precio-mvp" data-screen-label="Precio · MVP">
               <div className="svc-num">02</div>
               <div className="svc-body">
                 <h3>MVP</h3>
@@ -91,7 +91,7 @@ export default function Precios() {
               </div>
             </article>
 
-            <article className="svc" data-screen-label="Precio · SaaS">
+            <article className="svc" id="precio-saas" data-screen-label="Precio · SaaS">
               <div className="svc-num">03</div>
               <div className="svc-body">
                 <h3>SaaS completo</h3>
@@ -109,7 +109,7 @@ export default function Precios() {
               </div>
             </article>
 
-            <article className="svc" data-screen-label="Precio · Marketing">
+            <article className="svc" id="precio-marketing" data-screen-label="Precio · Marketing">
               <div className="svc-num">04</div>
               <div className="svc-body">
                 <h3>Marketing digital completo</h3>

@@ -1,5 +1,8 @@
 import { NextRequest } from 'next/server'
+import { Resend } from 'resend'
 import { createAdminClient } from '@/lib/supabase/admin'
+
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null
 
 const SYSTEM_PROMPT = `Eres el asistente de Hito Studio, un estudio de producto en Madrid que construye webs, MVPs y SaaS para founders y equipos pequeños. Tu tono es directo, honesto y sin relleno. Nunca usas emojis ni lenguaje corporativo.
 
@@ -85,6 +88,30 @@ export async function POST(request: NextRequest) {
       })
     } catch (dbError) {
       console.error('[diagnostico] DB insert error:', dbError)
+    }
+
+    if (resend) {
+      try {
+        await resend.emails.send({
+          from: 'Hito Studio <notificaciones@hitomarketing.com>',
+          to: 'hitomarketingstudio@gmail.com',
+          subject: `Nuevo lead: ${email || 'sin email'}`,
+          text: [
+            `Email: ${email || '(no proporcionado)'}`,
+            '',
+            `1. Qué quiere construir: ${respuestas[0]}`,
+            `2. Éxito en 6 meses: ${respuestas[1]}`,
+            `3. Coste de no tenerlo ya: ${respuestas[2]}`,
+            `4. Qué le ha impedido arrancar: ${respuestas[3]}`,
+            `5. Urgencia o fecha límite: ${respuestas[4]}`,
+            '',
+            `Diagnóstico: ${diagnostico}`,
+            `Precio sugerido: ${precio_sugerido || '(sin estimar)'}`,
+          ].join('\n'),
+        })
+      } catch (emailError) {
+        console.error('[diagnostico] Email send error:', emailError)
+      }
     }
 
     return Response.json({ diagnostico, precio_sugerido })

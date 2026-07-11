@@ -108,7 +108,7 @@ export default function Servicios() {
         </div>
         <div className="hero-index" aria-hidden="true">
           <b>4</b>
-          <span>servicios · desde 650€</span>
+          <span>formas de trabajar</span>
         </div>
       </header>
 
@@ -159,10 +159,9 @@ export default function Servicios() {
                 <span>· CMS</span>
                 <span>· 1 semana</span>
               </div>
-              <div className="svc-price">
-                <span className="from">Desde</span>
-                <span className="amount">650 €</span>
-              </div>
+              <a href="/precios#precio-web" className="svc-price-link">
+                Ver precio <span className="arrow">→</span>
+              </a>
             </article>
 
             <article className="svc" data-screen-label="Svc · MVP">
@@ -181,10 +180,9 @@ export default function Servicios() {
                 <span>· Launch</span>
                 <span>· 2 - 3 semanas</span>
               </div>
-              <div className="svc-price">
-                <span className="from">Desde</span>
-                <span className="amount">900 €</span>
-              </div>
+              <a href="/precios#precio-mvp" className="svc-price-link">
+                Ver precio <span className="arrow">→</span>
+              </a>
             </article>
 
             <article className="svc" data-screen-label="Svc · SaaS">
@@ -202,10 +200,9 @@ export default function Servicios() {
                 <span>· Billing · Auth</span>
                 <span>· 3 - 4 semanas</span>
               </div>
-              <div className="svc-price">
-                <span className="from">Desde</span>
-                <span className="amount">1.300 €</span>
-              </div>
+              <a href="/precios#precio-saas" className="svc-price-link">
+                Ver precio <span className="arrow">→</span>
+              </a>
             </article>
 
             <article className="svc" data-screen-label="Svc · Marketing">
@@ -225,10 +222,9 @@ export default function Servicios() {
                 <span>· Web</span>
                 <span>· Contenido</span>
               </div>
-              <div className="svc-price">
-                <span className="from">Desde</span>
-                <span className="amount">1.600 €</span>
-              </div>
+              <a href="/precios#precio-marketing" className="svc-price-link">
+                Ver precio <span className="arrow">→</span>
+              </a>
             </article>
 
           </div>
