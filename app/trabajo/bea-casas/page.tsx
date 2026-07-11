@@ -10,10 +10,11 @@ export const metadata: Metadata = {
   description:
     "Marketplace desarrollado para Bea Casas. Plataforma web completa con Next.js y Postgres. Hito Studio, Madrid.",
   alternates: {
-    canonical: "https://hitomarketing.com/trabajo/bea-casas",
+    canonical: "https://www.hitomarketing.com/trabajo/bea-casas",
   },
   openGraph: {
-    url: "https://hitomarketing.com/trabajo/bea-casas",
+    type: "article",
+    url: "https://www.hitomarketing.com/trabajo/bea-casas",
   },
 };
 

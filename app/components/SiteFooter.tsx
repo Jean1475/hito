@@ -40,6 +40,13 @@ export default function SiteFooter() {
         <span>© MMXXVI — Hito Studio S.L.</span>
         <span>B-77 419 220</span>
         <span>Hecho con cariño · Madrid</span>
+        <span>
+          <a href="/legal/aviso-legal">Aviso legal</a>
+          {" · "}
+          <a href="/legal/privacidad">Privacidad</a>
+          {" · "}
+          <a href="/legal/cookies">Cookies</a>
+        </span>
       </div>
       <div className="bigmark" aria-hidden="true">hito<span className="dot">.</span></div>
     </footer>

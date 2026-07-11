@@ -334,7 +334,7 @@ export default function DiagnosticoQuiz() {
             }}>
               <span style={{ color: 'var(--cobalt)' }}>↳</span> Diagnóstico · IA
             </span>
-            <h2 className="dq-heading">¿Lo construimos?</h2>
+            <h1 className="dq-heading">Diagnóstico de proyecto</h1>
             <p style={{
               fontSize: 18,
               lineHeight: 1.45,
@@ -342,7 +342,7 @@ export default function DiagnosticoQuiz() {
               margin: 0,
               maxWidth: 400,
             }}>
-              5 preguntas. La IA te dice si encajamos.
+              5 preguntas. La IA te dice si encajamos y qué servicio necesita tu proyecto.
             </p>
           </div>
 

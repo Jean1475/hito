@@ -10,10 +10,11 @@ export const metadata: Metadata = {
   description:
     "Web para Daruma, tienda física de cartas Pokémon, manga y cómic en Leganés, Madrid. Catálogo de stock, calendario de eventos y ficha de visita. Hito Studio.",
   alternates: {
-    canonical: "https://hitomarketing.com/trabajo/daruma",
+    canonical: "https://www.hitomarketing.com/trabajo/daruma",
   },
   openGraph: {
-    url: "https://hitomarketing.com/trabajo/daruma",
+    type: "article",
+    url: "https://www.hitomarketing.com/trabajo/daruma",
   },
 };
 

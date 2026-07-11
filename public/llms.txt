@@ -1,0 +1,23 @@
+# Hito Studio
+
+> Studio de producto digital en Madrid. Construimos MVPs, SaaS y páginas web
+> para founders y equipos pequeños. Trabajamos embedded con tu equipo, en
+> sprints cortos, y enviamos a producción — no a Figma.
+
+Hito Studio es un equipo pequeño (3+1 personas) que ofrece cuatro formatos de
+trabajo con scope, plazo y precio cerrados desde el día uno: web a medida,
+MVP, SaaS completo y marketing digital. Sede en Madrid, España.
+
+## Páginas clave
+
+- [Inicio](https://www.hitomarketing.com/): quiénes somos y proyectos recientes.
+- [Servicios](https://www.hitomarketing.com/servicios): los cuatro formatos de trabajo, precios y proceso.
+- [Diagnóstico de proyecto](https://www.hitomarketing.com/diagnostico): cuestionario para saber si un proyecto encaja con Hito Studio.
+- [Caso: Daruma — Pokétienda](https://www.hitomarketing.com/trabajo/daruma): web para tienda física de cartas y manga.
+- [Caso: Bea Casas — Marketplace](https://www.hitomarketing.com/trabajo/bea-casas): marketplace con Next.js y Postgres.
+- [Caso: Arca Legal](https://www.hitomarketing.com/trabajo/abogados): web corporativa para despacho de abogados.
+
+## Contacto
+
+- Email: hitomarketingstudio@gmail.com
+- Ubicación: Madrid, España

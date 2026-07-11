@@ -10,10 +10,11 @@ export const metadata: Metadata = {
   description:
     "Web corporativa para Arca Legal, despacho de abogados. Diseño editorial oscuro, sección de casos, métricas de resultados y equipo. Hito Studio, Madrid.",
   alternates: {
-    canonical: "https://hitomarketing.com/trabajo/abogados",
+    canonical: "https://www.hitomarketing.com/trabajo/abogados",
   },
   openGraph: {
-    url: "https://hitomarketing.com/trabajo/abogados",
+    type: "article",
+    url: "https://www.hitomarketing.com/trabajo/abogados",
   },
 };
 

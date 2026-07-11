@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://hitomarketing.com"),
+  metadataBase: new URL("https://www.hitomarketing.com"),
   title: {
     default: "Hito — Desarrollo de MVP y SaaS en Madrid",
     template: "%s | Hito Studio",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "es_ES",
-    url: "https://hitomarketing.com",
+    url: "https://www.hitomarketing.com",
     siteName: "Hito Studio",
     title: "Hito — Desarrollo de MVP y SaaS en Madrid",
     description:

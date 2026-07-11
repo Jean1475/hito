@@ -6,46 +6,16 @@ import ScrollReveal from "../components/ScrollReveal";
 import { JsonLd } from "../components/JsonLd";
 
 export const metadata: Metadata = {
-  title: "Servicios — Web, MVP, SaaS y Marketing digital en Madrid",
+  title: "Servicios — Web, MVP y SaaS en Madrid",
   description:
     "Cuatro servicios con scope, plazo y precio cerrados: web a medida desde 650€, MVP, SaaS completo y marketing digital. Studio de producto en Madrid.",
   alternates: {
-    canonical: "https://hitomarketing.com/servicios",
+    canonical: "https://www.hitomarketing.com/servicios",
   },
   openGraph: {
-    url: "https://hitomarketing.com/servicios",
+    type: "website",
+    url: "https://www.hitomarketing.com/servicios",
   },
-};
-
-const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "¿Trabajáis con equity en lugar de fee?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Sí, pero solo en proyectos seleccionados (equipo formado, ronda cerrada, hito claro). Hablamos.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Os quedáis con el código?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "No. Repositorio, dominio, cuentas — todo a tu nombre desde el día uno. Cuando nos vamos, te queda absolutamente todo.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "¿Y si necesito algo que no está en los servicios?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Lo hablamos. Casi todo lo que hacemos cabe en uno de los cuatro formatos — y si no, te decimos honestamente quién lo puede hacer mejor.",
-      },
-    },
-  ],
 };
 
 const servicesSchema = {
@@ -115,7 +85,6 @@ const MarqueeStar = () => (
 export default function Servicios() {
   return (
     <>
-      <JsonLd data={faqSchema} />
       <JsonLd data={servicesSchema} />
       <SiteTopbar />
       <SiteNav />

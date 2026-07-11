@@ -11,10 +11,11 @@ export const metadata: Metadata = {
   description:
     "Studio de producto en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños. Embedded con tu equipo, sprints cortos, enviamos a producción — no a Figma.",
   alternates: {
-    canonical: "https://hitomarketing.com",
+    canonical: "https://www.hitomarketing.com",
   },
   openGraph: {
-    url: "https://hitomarketing.com",
+    type: "website",
+    url: "https://www.hitomarketing.com",
   },
 };
 
@@ -24,7 +25,7 @@ const organizationSchema = {
   name: "Hito Studio",
   description:
     "Studio de producto digital en Madrid. Construimos MVPs, SaaS y páginas web para founders y equipos pequeños.",
-  url: "https://hitomarketing.com",
+  url: "https://www.hitomarketing.com",
   email: "hitomarketingstudio@gmail.com",
   address: {
     "@type": "PostalAddress",
@@ -97,6 +98,8 @@ export default function Home() {
               width={4864}
               height={2938}
               style={{ width: "100%", height: "auto" }}
+              priority
+              fetchPriority="high"
             />
             <a href="#trabajo" className="hs-tag t3">
               <span className="arr">↳</span>Ver proyectos

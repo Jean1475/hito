@@ -9,6 +9,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ["/dashboard", "/dashboard/leads"],
       },
     ],
-    sitemap: "https://hitomarketing.com/sitemap.xml",
+    sitemap: "https://www.hitomarketing.com/sitemap.xml",
   };
 }
