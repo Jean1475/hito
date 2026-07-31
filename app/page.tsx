@@ -144,20 +144,20 @@ export default function Home() {
             </p>
           </div>
 
-          {/* Featured project: Daruma */}
+          {/* Featured project: Pokétienda */}
           <div className="work-featured" data-reveal>
             <a
               href="/trabajo/daruma"
               className="work-card"
               data-screen-label="Work · Daruma"
-              aria-label="Daruma — Pokétienda, web para tienda de cartas y manga en Leganés, Madrid"
+              aria-label="Pokétienda — web para tienda de cartas y manga en Leganés, Madrid"
             >
               <span className="work-idx">F · 01 — Featured</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb is-image">
                 <Image
                   src="/hito/assets/daruma-mockup.png"
-                  alt="Daruma — Pokétienda"
+                  alt="Pokétienda"
                   width={4864}
                   height={2938}
                   className="mockup"
@@ -165,7 +165,7 @@ export default function Home() {
               </div>
               <div className="work-meta">
                 <div>
-                  <h3 className="work-title">Daruma — Pokétienda</h3>
+                  <h3 className="work-title">Pokétienda</h3>
                   <div className="work-sub">Cartas · Manga · Cómic · 2026 · Web · 3 semanas</div>
                 </div>
                 <div className="work-tags">
@@ -181,12 +181,42 @@ export default function Home() {
           <div className="work-grid" data-stagger>
 
             <a
+              href="/trabajo/decoreformas"
+              className="work-card"
+              data-screen-label="Work · Decoreformas"
+              aria-label="Decoreformas — Web de reformas, 2026, 3 semanas"
+            >
+              <span className="work-idx">02</span>
+              <span className="work-go" aria-hidden="true">↗</span>
+              <div className="work-thumb is-image">
+                <Image
+                  src="/hito/assets/decoreformas-mockup.png"
+                  alt="Decoreformas — Web de reformas"
+                  width={4864}
+                  height={2938}
+                  className="mockup"
+                />
+              </div>
+              <div className="work-meta">
+                <div>
+                  <h3 className="work-title">Decoreformas — Web de reformas</h3>
+                  <div className="work-sub">Decoreformas · 2026 · Web · 3 semanas</div>
+                </div>
+                <div className="work-tags">
+                  <span className="tag">Web</span>
+                  <span className="tag">Reformas</span>
+                  <span className="tag">Leganés</span>
+                </div>
+              </div>
+            </a>
+
+            <a
               href="/trabajo/bea-casas"
               className="work-card"
               data-screen-label="Work · Bea Casas"
               aria-label="Bea Casas — Marketplace, 2026, 7 semanas"
             >
-              <span className="work-idx">02</span>
+              <span className="work-idx">03</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb is-image">
                 <Image
@@ -210,13 +240,17 @@ export default function Home() {
               </div>
             </a>
 
+          </div>
+
+          {/* Última tarjeta, centrada */}
+          <div className="work-grid work-grid--single" data-stagger>
             <a
               href="/trabajo/abogados"
               className="work-card"
               data-screen-label="Work · Arca Legal"
               aria-label="Arca Legal — Web corporativa para despacho de abogados, 2026"
             >
-              <span className="work-idx">03</span>
+              <span className="work-idx">04</span>
               <span className="work-go" aria-hidden="true">↗</span>
               <div className="work-thumb is-image">
                 <Image
@@ -238,7 +272,6 @@ export default function Home() {
                 </div>
               </div>
             </a>
-
           </div>
         </div>
       </section>
